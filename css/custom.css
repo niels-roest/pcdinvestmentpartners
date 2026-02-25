@@ -1,0 +1,311 @@
+/* ============================================
+   PCD Investment Partners — Custom Styles
+   Supplements Tailwind CSS via CDN
+   ============================================ */
+
+/* ---- CSS Custom Properties ---- */
+:root {
+    --color-navy-900: #0a1628;
+    --color-navy-800: #0f1f3d;
+    --color-navy-700: #152a4a;
+    --color-brand-blue: #046bd2;
+    --color-brand-blue-dark: #045cb4;
+    --color-brand-light: #f4f6f8;
+    --transition-base: 200ms ease;
+    --transition-slow: 400ms ease;
+}
+
+/* ---- Base / Reset ---- */
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ---- Selection ---- */
+::selection {
+    background-color: var(--color-brand-blue);
+    color: #fff;
+}
+
+/* ---- Focus styles (a11y) ---- */
+:focus-visible {
+    outline: 2px solid var(--color-brand-blue);
+    outline-offset: 2px;
+}
+
+/* ---- Skip to content (a11y) ---- */
+.skip-to-content {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 9999;
+    padding: 1rem 2rem;
+    background: var(--color-brand-blue);
+    color: #fff;
+    font-weight: 600;
+    transition: top var(--transition-base);
+}
+.skip-to-content:focus {
+    top: 0;
+}
+
+/* ============================================
+   HEADER / NAVIGATION
+   ============================================ */
+
+/* Header scroll state */
+#site-header {
+    transition: background-color var(--transition-base), box-shadow var(--transition-base);
+}
+#site-header.scrolled {
+    background-color: rgba(10, 22, 40, 0.98);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Desktop dropdown */
+.dropdown-menu {
+    transform: translateY(4px);
+    transition: opacity var(--transition-base), visibility var(--transition-base), transform var(--transition-base);
+}
+.group:hover .dropdown-menu {
+    transform: translateY(0);
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+#mobile-menu.open {
+    display: block;
+    max-height: 500px;
+}
+
+/* Mobile dropdown content */
+.mobile-dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-in-out;
+}
+.mobile-dropdown-content.open {
+    display: block;
+    max-height: 300px;
+}
+
+/* Hamburger / close icon toggle */
+#mobile-menu-btn .close-icon {
+    display: none;
+}
+#mobile-menu-btn.active .hamburger-icon {
+    display: none;
+}
+#mobile-menu-btn.active .close-icon {
+    display: block;
+}
+
+/* Mobile dropdown arrow rotation */
+.mobile-dropdown-btn svg {
+    transition: transform var(--transition-base);
+}
+.mobile-dropdown-btn.active svg {
+    transform: rotate(180deg);
+}
+
+/* ============================================
+   ANIMATIONS — Scroll-triggered fade-in
+   ============================================ */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered animation delays for children */
+.fade-in-up[style*="animation-delay: 0.1s"] { transition-delay: 0.1s; }
+.fade-in-up[style*="animation-delay: 0.15s"] { transition-delay: 0.15s; }
+.fade-in-up[style*="animation-delay: 0.2s"] { transition-delay: 0.2s; }
+.fade-in-up[style*="animation-delay: 0.3s"] { transition-delay: 0.3s; }
+
+/* ============================================
+   STAT COUNTERS
+   ============================================ */
+.stat-counter {
+    font-variant-numeric: tabular-nums;
+}
+
+/* ============================================
+   FAQ ACCORDION
+   ============================================ */
+.faq-item {
+    transition: box-shadow var(--transition-base);
+}
+.faq-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+.faq-item.active {
+    box-shadow: 0 4px 20px rgba(4, 107, 210, 0.1);
+}
+
+.faq-trigger {
+    cursor: pointer;
+    transition: color var(--transition-base);
+}
+.faq-trigger:hover span {
+    color: var(--color-brand-blue);
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+.faq-content.open {
+    display: block;
+    max-height: 500px;
+}
+
+/* FAQ icon rotation */
+.faq-icon {
+    transition: transform var(--transition-base);
+}
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+/* ============================================
+   BUTTONS & LINKS
+   ============================================ */
+a {
+    transition: color var(--transition-base);
+}
+
+/* CTA button hover glow */
+.bg-brand-blue:hover {
+    box-shadow: 0 8px 25px rgba(4, 107, 210, 0.3);
+}
+
+/* ============================================
+   CARDS
+   ============================================ */
+article.group {
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+article.group:hover {
+    transform: translateY(-4px);
+}
+
+/* ============================================
+   IMAGES
+   ============================================ */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ============================================
+   BREADCRUMBS (for subpages)
+   ============================================ */
+.breadcrumb {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+.breadcrumb a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color var(--transition-base);
+}
+.breadcrumb a:hover {
+    color: #fff;
+}
+.breadcrumb .separator {
+    margin: 0 0.5rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+    #site-header,
+    #mobile-menu,
+    .scroll-indicator,
+    footer {
+        display: none !important;
+    }
+    main {
+        padding-top: 0 !important;
+    }
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #555;
+    }
+    a[href^="#"]::after,
+    a[href^="javascript"]::after {
+        content: "";
+    }
+    img {
+        max-width: 100% !important;
+    }
+    .fade-in-up {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
+/* ============================================
+   RESPONSIVE FINE-TUNING
+   ============================================ */
+
+/* Small mobile (< 375px) */
+@media (max-width: 374px) {
+    .text-4xl { font-size: 1.75rem; }
+    .text-5xl { font-size: 2rem; }
+    .text-6xl { font-size: 2.25rem; }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .grid.md\:grid-cols-3 {
+        gap: 1.5rem;
+    }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    html {
+        scroll-behavior: auto;
+    }
+    .fade-in-up {
+        opacity: 1;
+        transform: none;
+    }
+}
