@@ -60,10 +60,12 @@ body {
 
 /* Header scroll state */
 #site-header {
-    transition: background-color var(--transition-base), box-shadow var(--transition-base);
+    background-color: transparent;
+    transition: background-color var(--transition-base), box-shadow var(--transition-base), backdrop-filter var(--transition-base);
 }
 #site-header.scrolled {
-    background-color: rgba(10, 22, 40, 0.98);
+    background-color: rgba(10, 22, 40, 0.95);
+    backdrop-filter: blur(4px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
 }
 
