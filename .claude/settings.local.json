@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:pcdinvestmentpartners.com)",
+      "Bash(curl -sL -o assets/logo/pcd-logo.png \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/pcd-logo-blauw-500x200-1.png\")",
+      "Bash(curl -sL -o assets/logo/pcd-logo-small.png \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/pcd-logo-blauw-500x200-1-111x44.png\")",
+      "Bash(curl -sL -o assets/logo/pcd-logo-footer.png \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/pcd-logo-blauw-500x200-1-300x120.png\")",
+      "Bash(curl -sL -o assets/favicon/apple-touch-icon.png \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/cropped-pcd-logo-design-blauw-500x500-1-180x180.png\")",
+      "Bash(curl -sL -o assets/favicon/favicon-32x32.png \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/cropped-pcd-logo-design-blauw-500x500-1-32x32.png\")",
+      "Bash(curl -sL -o assets/favicon/favicon-192x192.png \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/cropped-pcd-logo-design-blauw-500x500-1-192x192.png\")",
+      "Bash(curl -sL -o assets/images/hero-healthcare-ecosystem.webp \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/Ontwerp-zonder-titel.webp\")",
+      "Bash(curl -sL -o assets/images/carehub-ecosystem-diagram.webp \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/11/carehub-ai-kunstmatige-intelligentie-digitaal-zorgplatform-gezondheidszorg-nederland-e1764347033434.webp\")",
+      "Bash(curl -sL -o assets/images/carehub-verpleegkundige-thuiszorg.webp \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/11/carehub-verpleegkundige-thuiszorg-zwangere-vrouw-digitale-zorg-nederland-e1764346898856.webp\")",
+      "Bash(curl -sL -o assets/images/carehub-huisarts-consult.webp \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/11/carehub-huisarts-consult-kind-moeder-digitale-gezondheidszorg-nederland-e1764346923399.webp\")",
+      "Bash(curl -sL -o assets/images/digital-healthcare-innovation.png \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/healthcare-innovation-laboratory-medical-research-technology-netherlands.png\")",
+      "Bash(curl -sL -o assets/images/arrow-down-1.webp \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/arrow-down-number-1-1.webp\")",
+      "Bash(curl -sL -o assets/images/arrow-down-2.webp \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/arrow-down-number-2-1.webp\")",
+      "Bash(curl -sL -o assets/images/arrow-down-3.webp \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/arrow-down-number-3-1.webp\")",
+      "Bash(curl -sL -o /Users/nielsroest/pcd-website/assets/images/hero-healthcare-ecosystem.webp \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/Ontwerp-zonder-titel.webp\")",
+      "Bash(curl -sL -o /Users/nielsroest/pcd-website/assets/images/carehub-ecosystem-diagram.webp \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/11/carehub-ai-kunstmatige-intelligentie-digitaal-zorgplatform-gezondheidszorg-nederland-e1764347033434.webp\")",
+      "Bash(curl -sL -o /Users/nielsroest/pcd-website/assets/images/carehub-verpleegkundige-thuiszorg.webp \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/11/carehub-verpleegkundige-thuiszorg-zwangere-vrouw-digitale-zorg-nederland-e1764346898856.webp\")",
+      "Bash(curl -sL -o /Users/nielsroest/pcd-website/assets/images/carehub-huisarts-consult.webp \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/11/carehub-huisarts-consult-kind-moeder-digitale-gezondheidszorg-nederland-e1764346923399.webp\")",
+      "Bash(curl -sL -o /Users/nielsroest/pcd-website/assets/images/digital-healthcare-innovation.png \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/healthcare-innovation-laboratory-medical-research-technology-netherlands.png\")",
+      "Bash(curl -sL -o /Users/nielsroest/pcd-website/assets/images/arrow-down-1.webp \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/arrow-down-number-1-1.webp\")",
+      "Bash(curl -sL -o /Users/nielsroest/pcd-website/assets/images/arrow-down-2.webp \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/arrow-down-number-2-1.webp\")",
+      "Bash(curl -sL -o /Users/nielsroest/pcd-website/assets/images/arrow-down-3.webp \"https://pcdinvestmentpartners.com/wp-content/uploads/2025/12/arrow-down-number-3-1.webp\")",
+      "Bash(for page in carehub-zorg-digitalisering zorgorganisaties zorgtech-softwarebedrijven investeerders-partners pioneering-health-care-technology leiderschap esg-verklaring cases-2 insights contact)",
+      "Bash(do)",
+      "Bash(echo \"=== $page ===\")",
+      "Bash(curl -sL \"https://pcdinvestmentpartners.com/$page/\")",
+      "Bash(done)",
+      "Bash(ls -la /Users/nielsroest/pcd-website/*.html)",
+      "Bash(ls /Users/nielsroest/pcd-website/*.html)",
+      "Bash(python3 -c \"from PIL import Image; print\\(''Pillow available''\\)\")",
+      "Bash(for img in carehub-hero-integrated-ecosystem esg-duurzame-zorg esg-strategie insights-analytics-workspace insights-doctor-dashboard insights-ecosystem-diagram insights-team-meeting zorg-worker-data-overload zorgtech-cloud-infrastructure team-coby-dinkela team-frank-van-antwerpen team-kevin-de-rooij team-patrick-dinkela)",
+      "Bash(do echo \"=== $img ===\")"
+    ]
+  }
+}
