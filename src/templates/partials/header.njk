@@ -1,0 +1,118 @@
+<a href="#main-content" class="skip-to-content">{{ t.a11y.skip_to_content }}</a>
+
+<!-- ============================================ -->
+<!-- HEADER / NAVIGATION                          -->
+<!-- ============================================ -->
+<header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="{{ t.a11y.main_nav }}">
+        <div class="flex items-center justify-between h-20">
+            <!-- Logo -->
+            <a href="{{ langPrefix }}/" class="flex-shrink-0" aria-label="{{ t.a11y.logo_aria }}">
+                <img src="{{ rootPath }}assets/logo/pcd-logo.png" alt="{{ t.a11y.logo_alt }}" class="h-10 w-auto" width="200" height="50">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex lg:items-center lg:space-x-1">
+                <!-- Ecosysteem dropdown -->
+                <div class="relative group">
+                    <button class="nav-link flex items-center px-4 py-2 text-sm font-medium text-white/90 hover:text-white transition-colors" aria-expanded="false" aria-haspopup="true">
+                        {{ t.nav.ecosystem }}
+                        <svg class="ml-1 w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="dropdown-menu absolute left-0 top-full pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="bg-white rounded-lg shadow-xl border border-gray-100 py-2">
+                            <a href="{{ langPrefix }}/carehub-zorg-digitalisering" class="block px-4 py-3 text-sm text-gray-700 hover:bg-brand-light hover:text-brand-blue transition-colors">
+                                <span class="font-semibold">{{ t.nav.carehub }}</span>
+                                <span class="block text-xs text-gray-500 mt-0.5">{{ t.nav.carehub_desc }}</span>
+                            </a>
+                            <a href="{{ langPrefix }}/zorgorganisaties" class="block px-4 py-3 text-sm text-gray-700 hover:bg-brand-light hover:text-brand-blue transition-colors">
+                                <span class="font-semibold">{{ t.nav.healthcare_orgs }}</span>
+                                <span class="block text-xs text-gray-500 mt-0.5">{{ t.nav.healthcare_orgs_desc }}</span>
+                            </a>
+                            <a href="{{ langPrefix }}/zorgtech-softwarebedrijven" class="block px-4 py-3 text-sm text-gray-700 hover:bg-brand-light hover:text-brand-blue transition-colors">
+                                <span class="font-semibold">{{ t.nav.healthtech }}</span>
+                                <span class="block text-xs text-gray-500 mt-0.5">{{ t.nav.healthtech_desc }}</span>
+                            </a>
+                            <a href="{{ langPrefix }}/investeerders-partners" class="block px-4 py-3 text-sm text-gray-700 hover:bg-brand-light hover:text-brand-blue transition-colors">
+                                <span class="font-semibold">{{ t.nav.investors }}</span>
+                                <span class="block text-xs text-gray-500 mt-0.5">{{ t.nav.investors_desc }}</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Over PCD dropdown -->
+                <div class="relative group">
+                    <button class="nav-link flex items-center px-4 py-2 text-sm font-medium text-white/90 hover:text-white transition-colors" aria-expanded="false" aria-haspopup="true">
+                        {{ t.nav.about }}
+                        <svg class="ml-1 w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="dropdown-menu absolute left-0 top-full pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="bg-white rounded-lg shadow-xl border border-gray-100 py-2">
+                            <a href="{{ langPrefix }}/pioneering-health-care-technology" class="block px-4 py-3 text-sm text-gray-700 hover:bg-brand-light hover:text-brand-blue transition-colors">
+                                <span class="font-semibold">{{ t.nav.about_pcd }}</span>
+                                <span class="block text-xs text-gray-500 mt-0.5">{{ t.nav.about_pcd_desc }}</span>
+                            </a>
+                            <a href="{{ langPrefix }}/leiderschap" class="block px-4 py-3 text-sm text-gray-700 hover:bg-brand-light hover:text-brand-blue transition-colors">
+                                <span class="font-semibold">{{ t.nav.leadership }}</span>
+                                <span class="block text-xs text-gray-500 mt-0.5">{{ t.nav.leadership_desc }}</span>
+                            </a>
+                            <a href="{{ langPrefix }}/esg-verklaring" class="block px-4 py-3 text-sm text-gray-700 hover:bg-brand-light hover:text-brand-blue transition-colors">
+                                <span class="font-semibold">{{ t.nav.esg }}</span>
+                                <span class="block text-xs text-gray-500 mt-0.5">{{ t.nav.esg_desc }}</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="{{ langPrefix }}/cases" class="px-4 py-2 text-sm font-medium text-white/90 hover:text-white transition-colors">{{ t.nav.cases }}</a>
+                <a href="{{ langPrefix }}/insights" class="px-4 py-2 text-sm font-medium text-white/90 hover:text-white transition-colors">{{ t.nav.insights }}</a>
+                <a href="{{ langPrefix }}/contact" class="ml-4 inline-flex items-center px-5 py-2.5 text-sm font-semibold text-white bg-brand-blue hover:bg-brand-blue-dark rounded-lg transition-colors">
+                    {{ t.nav.contact }}
+                </a>
+
+                {% include "partials/language-switcher.njk" %}
+            </div>
+
+            <!-- Mobile hamburger -->
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-white" aria-label="{{ t.a11y.menu_open }}" aria-expanded="false" data-label-open="{{ t.a11y.menu_open }}" data-label-close="{{ t.a11y.menu_close }}">
+                <svg class="hamburger-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <svg class="close-icon w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-navy-900 border-t border-white/10">
+        <div class="px-4 py-4 space-y-1">
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-3 text-white/90 text-sm font-medium">
+                    {{ t.nav.ecosystem }}
+                    <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                    <a href="{{ langPrefix }}/carehub-zorg-digitalisering" class="block px-3 py-2 text-sm text-white/70 hover:text-white">{{ t.nav.carehub }}</a>
+                    <a href="{{ langPrefix }}/zorgorganisaties" class="block px-3 py-2 text-sm text-white/70 hover:text-white">{{ t.nav.healthcare_orgs }}</a>
+                    <a href="{{ langPrefix }}/zorgtech-softwarebedrijven" class="block px-3 py-2 text-sm text-white/70 hover:text-white">{{ t.nav.healthtech }}</a>
+                    <a href="{{ langPrefix }}/investeerders-partners" class="block px-3 py-2 text-sm text-white/70 hover:text-white">{{ t.nav.investors }}</a>
+                </div>
+            </div>
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-3 text-white/90 text-sm font-medium">
+                    {{ t.nav.about }}
+                    <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                    <a href="{{ langPrefix }}/pioneering-health-care-technology" class="block px-3 py-2 text-sm text-white/70 hover:text-white">{{ t.nav.about_pcd }}</a>
+                    <a href="{{ langPrefix }}/leiderschap" class="block px-3 py-2 text-sm text-white/70 hover:text-white">{{ t.nav.leadership }}</a>
+                    <a href="{{ langPrefix }}/esg-verklaring" class="block px-3 py-2 text-sm text-white/70 hover:text-white">{{ t.nav.esg }}</a>
+                </div>
+            </div>
+            <a href="{{ langPrefix }}/cases" class="block px-3 py-3 text-sm font-medium text-white/90 hover:text-white">{{ t.nav.cases }}</a>
+            <a href="{{ langPrefix }}/insights" class="block px-3 py-3 text-sm font-medium text-white/90 hover:text-white">{{ t.nav.insights }}</a>
+            <a href="{{ langPrefix }}/contact" class="block mt-2 px-3 py-3 text-sm font-semibold text-white bg-brand-blue hover:bg-brand-blue-dark rounded-lg text-center">{{ t.nav.contact }}</a>
+
+            {% include "partials/language-switcher-mobile.njk" %}
+        </div>
+    </div>
+</header>

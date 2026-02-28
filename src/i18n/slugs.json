@@ -1,0 +1,97 @@
+{
+  "carehub-zorg-digitalisering": {
+    "en": "carehub-healthcare-digitalization",
+    "es": "carehub-digitalizacion-sanitaria",
+    "pt-br": "carehub-digitalizacao-saude"
+  },
+  "zorgorganisaties": {
+    "en": "healthcare-organizations",
+    "es": "organizaciones-de-salud",
+    "pt-br": "organizacoes-de-saude"
+  },
+  "zorgtech-softwarebedrijven": {
+    "en": "healthtech-companies",
+    "es": "empresas-healthtech",
+    "pt-br": "empresas-healthtech"
+  },
+  "investeerders-partners": {
+    "en": "investors-partners",
+    "es": "inversores-socios",
+    "pt-br": "investidores-parceiros"
+  },
+  "pioneering-health-care-technology": {
+    "en": "pioneering-health-care-technology",
+    "es": "pioneering-health-care-technology",
+    "pt-br": "pioneering-health-care-technology"
+  },
+  "leiderschap": {
+    "en": "leadership",
+    "es": "liderazgo",
+    "pt-br": "lideranca"
+  },
+  "esg-verklaring": {
+    "en": "esg-statement",
+    "es": "declaracion-esg",
+    "pt-br": "declaracao-esg"
+  },
+  "strategie": {
+    "en": "strategy",
+    "es": "estrategia",
+    "pt-br": "estrategia"
+  },
+  "case-ggz": {
+    "en": "case-mental-health",
+    "es": "caso-salud-mental",
+    "pt-br": "caso-saude-mental"
+  },
+  "case-ziekenhuis-care": {
+    "en": "case-hospital-care",
+    "es": "caso-hospital",
+    "pt-br": "caso-hospital"
+  },
+  "case-24-7-digitale-zorg": {
+    "en": "case-24-7-digital-care",
+    "es": "caso-atencion-digital-24-7",
+    "pt-br": "caso-cuidado-digital-24-7"
+  },
+  "insight-interoperabiliteit-nederlandse-zorg": {
+    "en": "insight-interoperability-dutch-healthcare",
+    "es": "insight-interoperabilidad-salud",
+    "pt-br": "insight-interoperabilidade-saude"
+  },
+  "insight-werkdruk-zorg-technologie": {
+    "en": "insight-workload-healthcare-technology",
+    "es": "insight-carga-trabajo-tecnologia",
+    "pt-br": "insight-carga-trabalho-tecnologia"
+  },
+  "insight-buy-and-build-zorgtechnologie": {
+    "en": "insight-buy-and-build-healthtech",
+    "es": "insight-buy-and-build-healthtech",
+    "pt-br": "insight-buy-and-build-healthtech"
+  },
+  "insight-mensgerichte-ai-healthcare": {
+    "en": "insight-human-centered-ai-healthcare",
+    "es": "insight-ia-centrada-en-personas",
+    "pt-br": "insight-ia-centrada-nas-pessoas"
+  },
+  "insight-datagedreven-zorg": {
+    "en": "insight-data-driven-healthcare",
+    "es": "insight-salud-basada-en-datos",
+    "pt-br": "insight-saude-baseada-em-dados"
+  },
+  "insight-ai-zorg-kansen-verantwoordelijkheid": {
+    "en": "insight-ai-healthcare-opportunities-responsibility",
+    "es": "insight-ia-salud-oportunidades-responsabilidad",
+    "pt-br": "insight-ia-saude-oportunidades-responsabilidade"
+  },
+  "privacyverklaring": {
+    "en": "privacy-policy",
+    "es": "politica-de-privacidad",
+    "pt-br": "politica-de-privacidade"
+  },
+  "cookiebeleid-eu": {
+    "en": "cookie-policy-eu",
+    "es": "politica-de-cookies-eu",
+    "pt-br": "politica-de-cookies-eu"
+  }
+}

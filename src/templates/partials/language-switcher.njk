@@ -1,0 +1,27 @@
+<!-- Desktop Language Switcher -->
+<div class="relative group ml-3">
+    <button class="nav-link flex items-center px-3 py-2 text-sm font-medium text-white/90 hover:text-white transition-colors" aria-expanded="false" aria-haspopup="true">
+        <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+        </svg>
+        {{ currentLangLabel }}
+        <svg class="ml-1 w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="dropdown-menu absolute right-0 top-full pt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+        <div class="bg-white rounded-lg shadow-xl border border-gray-100 py-2">
+            {% for switchLang in languageSwitchUrls %}
+            {% if switchLang.code == lang %}
+            <span class="flex items-center px-4 py-2.5 text-sm font-semibold text-brand-blue">
+                <svg class="w-4 h-4 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                {{ switchLang.label }}
+            </span>
+            {% else %}
+            <a href="{{ switchLang.url }}" hreflang="{{ switchLang.hreflang }}" class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-brand-light hover:text-brand-blue transition-colors">
+                <span class="w-4 mr-2 flex-shrink-0"></span>
+                {{ switchLang.label }}
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

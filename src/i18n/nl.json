@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "ecosystem": "Ecosysteem",
+    "ecosystem_carehub": "CareHub-ecosysteem",
+    "ecosystem_carehub_desc": "De digitale ruggengraat voor de zorg",
+    "ecosystem_zorgorganisaties": "Zorgorganisaties",
+    "ecosystem_zorgorganisaties_desc": "Digitale oplossingen voor de care-sector",
+    "ecosystem_zorgtech": "Zorgtech-bedrijven",
+    "ecosystem_zorgtech_desc": "Schaal uw zorgsoftware via CareHub",
+    "ecosystem_investeerders": "Investeerders & Partners",
+    "ecosystem_investeerders_desc": "Buy & build in zorgtechnologie",
+    "about": "Over PCD",
+    "about_pioneering": "Over PCD Investment Partners",
+    "about_pioneering_desc": "Bouwen aan de digitale ruggengraat",
+    "about_leadership": "Leiderschap",
+    "about_leadership_desc": "Ons team van experts",
+    "about_esg": "ESG-verklaring",
+    "about_esg_desc": "Duurzaam investeren in zorg",
+    "cases": "Cases",
+    "insights": "Insights",
+    "contact": "Contact"
+  },
+  "footer": {
+    "description": "PCD Investment Partners bouwt het CareHub-ecosysteem voor digitale zorgtechnologie in Nederland en Europa.",
+    "follow_linkedin": "Volg ons op LinkedIn",
+    "col_ecosystem": "Ecosysteem",
+    "col_about": "Over PCD",
+    "col_contact": "Contact",
+    "address": "Lijndonk 4<br>Breda, Nederland",
+    "copyright": "&copy; 2024&ndash;2026 PCD Investment Partners. Alle rechten voorbehouden.",
+    "privacy": "Privacyverklaring",
+    "cookies": "Cookiebeleid"
+  },
+  "a11y": {
+    "skip_to_content": "Ga naar inhoud",
+    "logo_alt": "PCD Investment Partners logo - digitale zorgtechnologie ecosysteem",
+    "logo_aria": "PCD Investment Partners - Naar homepage",
+    "menu_open": "Menu openen",
+    "menu_close": "Menu sluiten",
+    "main_nav": "Hoofdnavigatie",
+    "linkedin_aria": "PCD Investment Partners op LinkedIn"
+  },
+  "lang_switcher": {
+    "label": "Taal"
+  },
+  "structured_data": {
+    "org_description": "PCD Investment Partners bouwt het CareHub-ecosysteem voor digitale zorgtechnologie in Nederland en Europa."
+  }
+}

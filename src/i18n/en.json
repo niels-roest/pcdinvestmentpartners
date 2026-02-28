@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "ecosystem": "Ecosystem",
+    "ecosystem_carehub": "CareHub Ecosystem",
+    "ecosystem_carehub_desc": "The digital backbone for healthcare",
+    "ecosystem_zorgorganisaties": "Healthcare Organizations",
+    "ecosystem_zorgorganisaties_desc": "Digital solutions for the care sector",
+    "ecosystem_zorgtech": "HealthTech Companies",
+    "ecosystem_zorgtech_desc": "Scale your healthcare software via CareHub",
+    "ecosystem_investeerders": "Investors & Partners",
+    "ecosystem_investeerders_desc": "Buy & build in healthcare technology",
+    "about": "About PCD",
+    "about_pioneering": "About PCD Investment Partners",
+    "about_pioneering_desc": "Building the digital backbone",
+    "about_leadership": "Leadership",
+    "about_leadership_desc": "Our team of experts",
+    "about_esg": "ESG Statement",
+    "about_esg_desc": "Sustainable investing in healthcare",
+    "cases": "Cases",
+    "insights": "Insights",
+    "contact": "Contact"
+  },
+  "footer": {
+    "description": "PCD Investment Partners builds the CareHub ecosystem for digital healthcare technology in the Netherlands and Europe.",
+    "follow_linkedin": "Follow us on LinkedIn",
+    "col_ecosystem": "Ecosystem",
+    "col_about": "About PCD",
+    "col_contact": "Contact",
+    "address": "Lijndonk 4<br>Breda, The Netherlands",
+    "copyright": "&copy; 2024&ndash;2026 PCD Investment Partners. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy"
+  },
+  "a11y": {
+    "skip_to_content": "Skip to content",
+    "logo_alt": "PCD Investment Partners logo - digital healthcare technology ecosystem",
+    "logo_aria": "PCD Investment Partners - Go to homepage",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu",
+    "main_nav": "Main navigation",
+    "linkedin_aria": "PCD Investment Partners on LinkedIn"
+  },
+  "lang_switcher": {
+    "label": "Language"
+  },
+  "structured_data": {
+    "org_description": "PCD Investment Partners builds the CareHub ecosystem for digital healthcare technology in the Netherlands and Europe."
+  }
+}

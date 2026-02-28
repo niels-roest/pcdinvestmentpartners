@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "ecosystem": "Ecossistema",
+    "ecosystem_carehub": "Ecossistema CareHub",
+    "ecosystem_carehub_desc": "A espinha dorsal digital para a saúde",
+    "ecosystem_zorgorganisaties": "Organizações de saúde",
+    "ecosystem_zorgorganisaties_desc": "Soluções digitais para o setor de saúde",
+    "ecosystem_zorgtech": "Empresas HealthTech",
+    "ecosystem_zorgtech_desc": "Escale seu software de saúde através do CareHub",
+    "ecosystem_investeerders": "Investidores e parceiros",
+    "ecosystem_investeerders_desc": "Buy & build em tecnologia de saúde",
+    "about": "Sobre a PCD",
+    "about_pioneering": "Sobre a PCD Investment Partners",
+    "about_pioneering_desc": "Construindo a espinha dorsal digital",
+    "about_leadership": "Liderança",
+    "about_leadership_desc": "Nossa equipe de especialistas",
+    "about_esg": "Declaração ESG",
+    "about_esg_desc": "Investimento sustentável em saúde",
+    "cases": "Cases",
+    "insights": "Insights",
+    "contact": "Contato"
+  },
+  "footer": {
+    "description": "PCD Investment Partners constrói o ecossistema CareHub para tecnologia digital de saúde nos Países Baixos e na Europa.",
+    "follow_linkedin": "Siga-nos no LinkedIn",
+    "col_ecosystem": "Ecossistema",
+    "col_about": "Sobre a PCD",
+    "col_contact": "Contato",
+    "address": "Lijndonk 4<br>Breda, Países Baixos",
+    "copyright": "&copy; 2024&ndash;2026 PCD Investment Partners. Todos os direitos reservados.",
+    "privacy": "Política de Privacidade",
+    "cookies": "Política de Cookies"
+  },
+  "a11y": {
+    "skip_to_content": "Pular para o conteúdo",
+    "logo_alt": "Logo da PCD Investment Partners - ecossistema de tecnologia digital de saúde",
+    "logo_aria": "PCD Investment Partners - Ir para a página inicial",
+    "menu_open": "Abrir menu",
+    "menu_close": "Fechar menu",
+    "main_nav": "Navegação principal",
+    "linkedin_aria": "PCD Investment Partners no LinkedIn"
+  },
+  "lang_switcher": {
+    "label": "Idioma"
+  },
+  "structured_data": {
+    "org_description": "PCD Investment Partners constrói o ecossistema CareHub para tecnologia digital de saúde nos Países Baixos e na Europa."
+  }
+}

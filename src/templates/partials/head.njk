@@ -1,0 +1,78 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<meta name="author" content="PCD Investment Partners">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{{ canonical }}">
+
+<!-- Hreflang tags -->
+{% for altLang in availableLanguages %}
+<link rel="alternate" hreflang="{{ altLang.hreflang }}" href="{{ altLang.url }}">
+{% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ availableLanguages[0].url }}">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{{ og_image }}">
+<meta property="og:site_name" content="PCD Investment Partners">
+<meta property="og:locale" content="{{ og_locale }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:image" content="{{ og_image }}">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="{{ rootPath }}assets/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ rootPath }}assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ rootPath }}assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ rootPath }}assets/favicon/favicon-16x16.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Preload critical resources -->
+<link rel="preload" href="{{ rootPath }}assets/logo/pcd-logo.png" as="image">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+
+<!-- Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+
+<!-- Tailwind CSS via CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    navy: {
+                        900: '#0a1628',
+                        800: '#0f1f3d',
+                        700: '#152a4a',
+                        600: '#1a3558',
+                    },
+                    brand: {
+                        blue: '#046bd2',
+                        'blue-dark': '#045cb4',
+                        light: '#f4f6f8',
+                    }
+                },
+                fontFamily: {
+                    sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                }
+            }
+        }
+    }
+</script>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ rootPath }}css/custom.css">
+
+<!-- Structured Data: Organization -->
+{% include "partials/structured-data-org.njk" %}
+
+{% block structured_data %}{% endblock %}

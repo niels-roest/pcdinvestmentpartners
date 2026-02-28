@@ -38,7 +38,7 @@
                 mobileMenu.classList.remove('open');
                 mobileMenuBtn.classList.remove('active');
                 mobileMenuBtn.setAttribute('aria-expanded', 'false');
-                mobileMenuBtn.setAttribute('aria-label', 'Menu openen');
+                mobileMenuBtn.setAttribute('aria-label', mobileMenuBtn.dataset.labelOpen || 'Menu openen');
             } else {
                 mobileMenu.classList.remove('hidden');
                 // Force reflow before adding open class for transition
@@ -46,7 +46,7 @@
                 mobileMenu.classList.add('open');
                 mobileMenuBtn.classList.add('active');
                 mobileMenuBtn.setAttribute('aria-expanded', 'true');
-                mobileMenuBtn.setAttribute('aria-label', 'Menu sluiten');
+                mobileMenuBtn.setAttribute('aria-label', mobileMenuBtn.dataset.labelClose || 'Menu sluiten');
             }
         });
     }

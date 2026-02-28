@@ -1,0 +1,14 @@
+{
+  "name": "pcd-website",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && npx serve dist"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "glob": "^10.3.10",
+    "gray-matter": "^4.0.3",
+    "nunjucks": "^3.2.4"
+  }
+}
