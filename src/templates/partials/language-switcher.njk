@@ -16,7 +16,7 @@
                 {{ switchLang.label }}
             </span>
             {% else %}
-            <a href="{{ switchLang.url }}" hreflang="{{ switchLang.hreflang }}" class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-brand-light hover:text-brand-blue transition-colors">
+            <a href="{{ switchLang.url }}" hreflang="{{ switchLang.hreflang }}" onclick="try{localStorage.setItem('pcd-lang-choice','{{ switchLang.code }}')}catch(e){}" class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-brand-light hover:text-brand-blue transition-colors">
                 <span class="w-4 mr-2 flex-shrink-0"></span>
                 {{ switchLang.label }}
             </a>

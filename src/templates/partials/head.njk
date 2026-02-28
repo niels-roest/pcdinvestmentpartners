@@ -12,6 +12,29 @@
 {% endfor %}
 <link rel="alternate" hreflang="x-default" href="{{ availableLanguages[0].url }}">
 
+{% if lang == 'nl' %}
+<!-- Auto language detection: redirect first-time visitors to their browser language -->
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('pcd-lang-choice')) return;
+    if (sessionStorage.getItem('pcd-lang-redirected')) return;
+    var bl = (navigator.language || navigator.languages && navigator.languages[0] || '').toLowerCase();
+    var target = null;
+    if (bl.indexOf('pt') === 0) target = 'pt-BR';
+    else if (bl.indexOf('es') === 0) target = 'es';
+    else if (bl.indexOf('en') === 0) target = 'en';
+    if (!target) return;
+    var link = document.querySelector('link[hreflang="' + target + '"]');
+    if (link && link.href) {
+      sessionStorage.setItem('pcd-lang-redirected', '1');
+      window.location.replace(link.href);
+    }
+  } catch(e) {}
+})();
+</script>
+{% endif %}
+
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ title }}">
