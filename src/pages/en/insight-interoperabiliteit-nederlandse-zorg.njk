@@ -1,0 +1,329 @@
+---
+title: "The Future of Interoperability in Dutch Healthcare | PCD Investment Partners"
+description: "How open standards such as FHIR and HL7 are laying the foundation for integrated care in the Netherlands. Discover the impact of Wegiz, EHDS and the CareHub ecosystem on interoperability."
+og_image: "assets/logo/pcd-logo-design-blauw-transparant-500x500.png"
+og_locale: "en_US"
+slug: "insight-interoperabiliteit-nederlandse-zorg"
+---
+
+
+        <!-- ============================================ -->
+        <!-- HERO SECTION                                 -->
+        <!-- ============================================ -->
+        <section class="relative bg-navy-900 overflow-hidden pt-32 pb-16 lg:pt-40 lg:pb-20" aria-label="Hero">
+            <div class="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-700"></div>
+            <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Breadcrumb -->
+                <nav class="breadcrumb mb-8 fade-in-up" aria-label="Breadcrumb">
+                    <ol class="flex items-center">
+                        <li><a href="{{ langPrefix }}/">Home</a></li>
+                        <li><span class="separator" aria-hidden="true">/</span></li>
+                        <li><a href="{{ langPrefix }}/insights">Insights</a></li>
+                        <li><span class="separator" aria-hidden="true">/</span></li>
+                        <li><span class="text-white/90" aria-current="page">Interoperability in Dutch Healthcare</span></li>
+                    </ol>
+                </nav>
+
+                <div class="max-w-3xl fade-in-up" style="animation-delay: 0.1s">
+                    <span class="inline-block px-4 py-1.5 text-xs font-semibold tracking-wider text-brand-blue bg-brand-blue/10 rounded-full uppercase mb-6">Healthcare Technology</span>
+                    <h1 class="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">The future of interoperability in Dutch healthcare</h1>
+                    <p class="text-lg text-white/70 leading-relaxed mb-6">How open standards such as FHIR and HL7 are laying the foundation for an integrated healthcare landscape. An analysis of Wegiz, EHDS and the role of the CareHub ecosystem.</p>
+                    <div class="flex items-center gap-4 text-sm text-white/50">
+                        <span>By PCD Investment Partners</span>
+                        <span aria-hidden="true">&middot;</span>
+                        <time datetime="2026-01">January 2026</time>
+                        <span aria-hidden="true">&middot;</span>
+                        <span>7 min read</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- ARTICLE: THE FRAGMENTED HEALTHCARE LANDSCAPE -->
+        <!-- ============================================ -->
+        <section class="py-16 lg:py-20 bg-white" aria-label="The fragmented healthcare landscape">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <span class="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-brand-blue bg-brand-blue/10 rounded-full uppercase mb-4">The challenge</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 mb-6">The fragmented healthcare landscape</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">Dutch healthcare ranks among the best in the world, but behind the scenes the sector is grappling with a fundamental problem: more than <strong class="text-navy-900">1,000 different software systems</strong> that barely communicate with each other. From electronic client records (ECRs) and GP information systems to pharmacy software and imaging platforms &ndash; each system operates as a standalone island.</p>
+                <p class="text-gray-600 leading-relaxed mb-6">The consequences are felt at every level. Patients must share their medical history anew with each care provider. GPs have no visibility into medication prescribed by a specialist. Nurses manually enter the same data into multiple systems. This fragmentation leads not only to frustration, but also to medical risks: information that is not available in time can lead to incorrect diagnoses or unnecessary duplicate examinations.</p>
+                <p class="text-gray-600 leading-relaxed mb-6">Recent research shows that <strong class="text-navy-900">70% of healthcare organisations</strong> are actively seeking solutions for better data exchange. There is a growing recognition that interoperability &ndash; the ability of systems to seamlessly exchange and interpret data &ndash; is no longer a luxury, but an absolute necessity for future-proof care.</p>
+                <p class="text-gray-600 leading-relaxed mb-8">The question is no longer <em>whether</em> interoperability will come, but <em>how</em> we accelerate the transition to an integrated healthcare landscape. In this article, we analyse the legislative, technical and practical dimensions of this transformation.</p>
+
+                <!-- Stats callout -->
+                <div class="grid sm:grid-cols-3 gap-6 my-12">
+                    <div class="text-center bg-brand-light rounded-2xl p-6">
+                        <p class="text-3xl sm:text-4xl font-bold text-brand-blue mb-2">70%</p>
+                        <p class="text-sm font-medium text-navy-900">Seeking interoperability</p>
+                    </div>
+                    <div class="text-center bg-brand-light rounded-2xl p-6">
+                        <p class="text-3xl sm:text-4xl font-bold text-brand-blue mb-2">1000+</p>
+                        <p class="text-sm font-medium text-navy-900">Healthcare software systems</p>
+                    </div>
+                    <div class="text-center bg-brand-light rounded-2xl p-6">
+                        <p class="text-3xl sm:text-4xl font-bold text-brand-blue mb-2">40%</p>
+                        <p class="text-sm font-medium text-navy-900">Time saved through integration</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- ARTICLE: WEGIZ AND EHDS                      -->
+        <!-- ============================================ -->
+        <section class="py-16 lg:py-20 bg-brand-light" aria-label="Wegiz and EHDS">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 mb-6">Wegiz and EHDS: legislation as a catalyst</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">The government has recognised the urgency of interoperability and translated it into concrete legislation. The <strong class="text-navy-900">Wet elektronische gegevensuitwisseling in de zorg (Wegiz)</strong>, adopted by the Dutch Senate, mandates care providers to exchange patient data electronically. This is a historic step: for the first time, digital data exchange is no longer voluntary, but legally required.</p>
+
+                <div class="space-y-6 mb-8">
+                    <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                        <h3 class="text-lg font-semibold text-navy-900 mb-2">Wegiz: national mandate</h3>
+                        <p class="text-gray-600 leading-relaxed">Wegiz introduces phased requirements for electronic data exchange. The first tranche makes medication transfer and nursing handover mandatory in digital form. Subsequent tranches will extend this to laboratory results, imaging reports and referral letters. Software vendors must demonstrate that their systems comply with the stipulated interoperability standards.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                        <h3 class="text-lg font-semibold text-navy-900 mb-2">EHDS: European framework</h3>
+                        <p class="text-gray-600 leading-relaxed">At the European level, the <strong class="text-navy-900">European Health Data Space (EHDS)</strong> creates a uniform framework for health data. This framework enables a Dutch patient who requires care in Germany or Spain to access their medical records. The EHDS additionally encourages the secondary use of anonymised data for research and policymaking.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                        <h3 class="text-lg font-semibold text-navy-900 mb-2">IZA: ambitions for 2026</h3>
+                        <p class="text-gray-600 leading-relaxed">The Integraal Zorgakkoord (IZA) translates this legislation into concrete ambitions. The objective for 2026 is that all relevant care providers can exchange data digitally in accordance with established standards. This requires investment in infrastructure, training and cultural change within healthcare organisations.</p>
+                    </div>
+                </div>
+
+                <p class="text-gray-600 leading-relaxed">This legislative triangle &ndash; Wegiz, EHDS and IZA &ndash; forms an unprecedented catalyst for standardisation. Healthcare organisations that invest in interoperable systems now are not only positioning themselves in compliance with the law, but are also building a competitive advantage that will prove crucial in the years ahead.</p>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- ARTICLE: FHIR AND HL7                        -->
+        <!-- ============================================ -->
+        <section class="py-16 lg:py-20 bg-white" aria-label="FHIR and HL7">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <span class="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-brand-blue bg-brand-blue/10 rounded-full uppercase mb-4">Technical standards</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 mb-6">FHIR and HL7: the technical standards</h2>
+                <p class="text-gray-600 leading-relaxed mb-8">Behind every successful data exchange in healthcare lie technical standards that determine <em>how</em> systems communicate with each other. Two standards form the backbone: HL7 and FHIR.</p>
+
+                <div class="space-y-8 mb-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-sm">01</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-navy-900 mb-2">HL7: the established standard</h3>
+                            <p class="text-gray-600 leading-relaxed">HL7 (Health Level Seven) has been the international standard for exchanging medical messages for decades. The protocol defines how clinical and administrative data is structured and transmitted between systems. Much of the existing healthcare software in the Netherlands is built on HL7 v2 messages, providing a solid yet sometimes rigid foundation for data exchange.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-sm">02</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-navy-900 mb-2">FHIR: the modern API standard</h3>
+                            <p class="text-gray-600 leading-relaxed"><strong class="text-navy-900">FHIR (Fast Healthcare Interoperability Resources)</strong> is the successor that is revolutionising the healthcare sector. Unlike traditional message exchange, FHIR works with modern RESTful APIs &ndash; the same technology that powers applications such as iDEAL and DigiD. Data is structured in &ldquo;resources&rdquo; (e.g. Patient, Observation, MedicationRequest) that can be queried and shared in real time. This makes FHIR exceptionally well-suited for mobile applications, patient portals and integrations across different care domains.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-sm">03</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-navy-900 mb-2">NEN7510: security as a foundation</h3>
+                            <p class="text-gray-600 leading-relaxed">Interoperability without security is irresponsible. <strong class="text-navy-900">NEN7510</strong> is the Dutch standard for information security in healthcare and forms the security foundation on which all data exchange rests. In combination with GDPR, NEN7510 ensures that patient data is not only integrated, but also exchanged securely. Every FHIR or HL7 implementation must comply with this security standard.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-light rounded-2xl p-8 text-center">
+                    <p class="text-2xl font-bold text-brand-blue mb-2">FHIR R4 as the Dutch standard</p>
+                    <p class="text-sm text-gray-600">Nictiz has designated FHIR R4 as the standard for new health information exchanges in the Netherlands, with the aim of creating a uniform and future-proof digital healthcare landscape.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- ARTICLE: ROLE OF CAREHUB                     -->
+        <!-- ============================================ -->
+        <section class="py-16 lg:py-20 bg-brand-light" aria-label="The role of the CareHub ecosystem">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 mb-6">The role of the CareHub ecosystem</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">Legislation and standards create the framework, but the real transformation takes place in practice. This is where the <a href="{{ langPrefix }}/carehub-zorg-digitalisering" class="text-brand-blue hover:text-brand-blue-dark font-medium">CareHub ecosystem</a> of PCD Investment Partners comes into play: a concrete answer to the interoperability challenge.</p>
+
+                <div class="grid sm:grid-cols-2 gap-6 mb-10">
+                    <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                        <h3 class="text-base font-semibold text-navy-900 mb-2">25 complementary companies</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">CareHub connects 25 complementary healthcare technology companies, each serving a specific part of the care chain. From ECR systems and scheduling software to medication safety and patient communication &ndash; all solutions are designed to work seamlessly together via open standards.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                        <h3 class="text-base font-semibold text-navy-900 mb-2">Open standards as a foundation</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Within CareHub, interoperability is not an afterthought, but the architectural principle. All connected companies implement FHIR interfaces and HL7 connections, enabling data to flow in real time between systems without manual intervention or duplicate data entry.</p>
+                    </div>
+                </div>
+
+                <p class="text-gray-600 leading-relaxed mb-6">What distinguishes CareHub from standalone integrations is the <strong class="text-navy-900">ecosystem approach</strong>. Instead of point-to-point connections &ndash; which grow exponentially in complexity &ndash; CareHub offers a shared integration layer. When a new healthtech company joins, it is immediately connected to all existing participants. This drastically reduces integration costs and shortens implementation time from months to weeks.</p>
+                <p class="text-gray-600 leading-relaxed mb-6">PCD Investment Partners selects and supports healthtech companies that demonstrably contribute to the interoperability ambition. By providing shared services in the areas of compliance, governance and technical architecture, PCD ensures that all ecosystem participants comply with Wegiz requirements, NEN7510 standards and FHIR specifications.</p>
+                <p class="text-gray-600 leading-relaxed">The result: interoperability that does not remain theoretical on whitepapers, but functions daily in the practice of healthcare organisations throughout the Netherlands.</p>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- ARTICLE: WHAT DOES THIS MEAN FOR HEALTHCARE ORGANISATIONS -->
+        <!-- ============================================ -->
+        <section class="py-16 lg:py-20 bg-white" aria-label="What does this mean for healthcare organisations">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 mb-6">What does this mean for healthcare organisations?</h2>
+                <p class="text-gray-600 leading-relaxed mb-8">For <a href="{{ langPrefix }}/zorgorganisaties" class="text-brand-blue hover:text-brand-blue-dark font-medium">healthcare organisations</a>, interoperability translates into tangible benefits that improve both the quality of care and operational efficiency.</p>
+
+                <div class="bg-brand-light rounded-xl p-6 mb-8">
+                    <h3 class="text-base font-semibold text-navy-900 mb-3">Concrete benefits of interoperability:</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <span class="text-gray-600"><strong class="text-navy-900">One patient overview:</strong> all relevant medical information available on a single screen, regardless of which source system holds the data. No more switching tabs or calling colleagues for missing information.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <span class="text-gray-600"><strong class="text-navy-900">Less duplicate data entry:</strong> data recorded in one system is automatically available in connected systems. This saves professionals up to 40% of their administrative time.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <span class="text-gray-600"><strong class="text-navy-900">Better care coordination:</strong> during handover moments &ndash; from hospital to GP, from mental healthcare to community team &ndash; information flows automatically. This prevents information loss and accelerates the care process.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <span class="text-gray-600"><strong class="text-navy-900">Future-proof:</strong> by building on open standards such as FHIR, your organisation avoids vendor lock-in. New applications and modules can be added easily without disrupting the existing landscape.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="text-gray-600 leading-relaxed mb-6">The transition to interoperable systems is an investment that pays for itself. Organisations that act now not only benefit from operational efficiency, but also proactively comply with the Wegiz mandates that will come into effect in the coming years.</p>
+                <p class="text-gray-600 leading-relaxed">The CareHub ecosystem offers healthcare organisations a proven path to interoperability: not lengthy, high-risk migration programmes, but a modular approach in which existing systems are connected step by step via open standards.</p>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- ARTICLE: CONCLUSION                          -->
+        <!-- ============================================ -->
+        <section class="py-16 lg:py-20 bg-navy-900" aria-label="Conclusion">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-up">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-6">Interoperability is the key to future-proof healthcare</h2>
+                <p class="text-lg text-white/70 leading-relaxed">The combination of legislation, open standards and the CareHub ecosystem is making integrated care in the Netherlands a reality. PCD Investment Partners builds the bridge between ambition and practice.</p>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- RELATED INSIGHTS                             -->
+        <!-- ============================================ -->
+        <section class="py-20 lg:py-28 bg-brand-light" aria-label="Related insights">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 fade-in-up">
+                    <h2 class="text-3xl font-bold text-navy-900 mb-4">Read our other insights</h2>
+                    <p class="text-gray-600">Discover more perspectives on digital care, healthcare technology and the CareHub ecosystem.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <article class="group bg-white rounded-2xl shadow-lg hover:shadow-xl overflow-hidden border border-gray-100 fade-in-up">
+                        <a href="{{ langPrefix }}/insight-datagedreven-zorg" class="block">
+                            <div class="relative overflow-hidden aspect-[16/10]">
+                                <img src="{{ rootPath }}assets/images/insights-doctor-dashboard.webp" alt="From data silos to data-driven care in Dutch healthcare" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" width="600" height="375">
+                                <div class="absolute top-4 left-4">
+                                    <span class="inline-block px-3 py-1 text-xs font-semibold text-white bg-brand-blue/90 rounded-full">Data & Analytics</span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-navy-900 mb-2 group-hover:text-brand-blue transition-colors">From data silos to data-driven care</h3>
+                                <span class="inline-flex items-center text-sm font-semibold text-brand-blue">
+                                    Read insight
+                                    <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                                </span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="group bg-white rounded-2xl shadow-lg hover:shadow-xl overflow-hidden border border-gray-100 fade-in-up" style="animation-delay: 0.1s">
+                        <a href="{{ langPrefix }}/insight-buy-and-build-zorgtechnologie" class="block">
+                            <div class="relative overflow-hidden aspect-[16/10]">
+                                <img src="{{ rootPath }}assets/images/insights-analytics-workspace.webp" alt="Buy-and-build strategy in healthcare technology" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" width="600" height="375">
+                                <div class="absolute top-4 left-4">
+                                    <span class="inline-block px-3 py-1 text-xs font-semibold text-white bg-brand-blue/90 rounded-full">Investing</span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-navy-900 mb-2 group-hover:text-brand-blue transition-colors">Buy-and-build in healthcare technology: ecosystem vs. roll-up</h3>
+                                <span class="inline-flex items-center text-sm font-semibold text-brand-blue">
+                                    Read insight
+                                    <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                                </span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- CTA SECTION                                  -->
+        <!-- ============================================ -->
+        <section class="py-20 lg:py-28 bg-gradient-to-r from-brand-blue to-brand-blue-dark" aria-label="Call to action">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-up">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Ready for interoperable care?</h2>
+                <p class="text-lg text-white/80 leading-relaxed mb-8 max-w-2xl mx-auto">
+                    Discover how the CareHub ecosystem connects your systems via open standards. Get in touch for a personal consultation on interoperability.
+                </p>
+                <a href="{{ langPrefix }}/contact" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-brand-blue bg-white hover:bg-gray-50 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
+                    Get in touch
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+            </div>
+        </section>
+
+
+{% block structured_data %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://pcdinvestmentpartners.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Insights",
+                "item": "https://pcdinvestmentpartners.com/insights"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Interoperability in Dutch Healthcare",
+                "item": "https://pcdinvestmentpartners.com/insight-interoperabiliteit-nederlandse-zorg"
+            }
+        ]
+    }
+    </script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "The future of interoperability in Dutch healthcare",
+        "author": {
+            "@type": "Organization",
+            "name": "PCD Investment Partners"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "PCD Investment Partners",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://pcdinvestmentpartners.com/assets/logo/pcd-logo.png"
+            }
+        },
+        "datePublished": "2026-01-15",
+        "dateModified": "2026-01-15",
+        "image": "https://pcdinvestmentpartners.com/assets/images/insights-ecosystem-diagram.webp",
+        "url": "https://pcdinvestmentpartners.com/insight-interoperabiliteit-nederlandse-zorg",
+        "description": "How open standards such as FHIR and HL7 are laying the foundation for integrated care in the Netherlands. The impact of Wegiz, EHDS and the CareHub ecosystem."
+    }
+    </script>
+{% endblock %}
