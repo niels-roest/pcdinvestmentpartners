@@ -93,5 +93,15 @@
     "en": "cookie-policy-eu",
     "es": "politica-de-cookies-eu",
     "pt-br": "politica-de-cookies-eu"
+  },
+  "woordenlijst": {
+    "en": "glossary",
+    "es": "glosario",
+    "pt-br": "glossario"
+  },
+  "auteur-niels-roest": {
+    "en": "author-niels-roest",
+    "es": "autor-niels-roest",
+    "pt-br": "autor-niels-roest"
   }
 }

@@ -31,7 +31,7 @@ slug: "insight-datagedreven-zorg"
                     <h1 class="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">De silos de dados à saúde orientada por dados</h1>
                     <p class="text-lg text-white/70 leading-relaxed mb-6">Dados de saúde estão por toda parte, mas raramente conectados. Como o CareHub integra dados de saúde para melhor tomada de decisão e cuidados personalizados.</p>
                     <div class="flex items-center gap-4 text-sm text-white/50">
-                        <span>Por <strong class="text-white/70">PCD Investment Partners</strong></span>
+                        <span>Por <strong class="text-white/70">Niels Roest</strong></span>
                         <span aria-hidden="true">&middot;</span>
                         <time datetime="2025-11">Novembro de 2025</time>
                         <span aria-hidden="true">&middot;</span>
@@ -326,8 +326,11 @@ slug: "insight-datagedreven-zorg"
         "@type": "Article",
         "headline": "De silos de dados à saúde orientada por dados",
         "author": {
-            "@type": "Organization",
-            "name": "PCD Investment Partners"
+            "@type": "Person",
+            "@id": "https://pcdinvestmentpartners.com/auteur-niels-roest#person",
+            "name": "Niels Roest",
+            "jobTitle": "CAIO & Chairman",
+            "url": "https://pcdinvestmentpartners.com/auteur-niels-roest"
         },
         "publisher": {
             "@type": "Organization",
@@ -338,9 +341,17 @@ slug: "insight-datagedreven-zorg"
             }
         },
         "datePublished": "2025-11-15",
+        "dateModified": "2025-11-15",
         "image": "https://pcdinvestmentpartners.com/assets/images/insights-doctor-dashboard.webp",
         "url": "https://pcdinvestmentpartners.com/insight-datagedreven-zorg",
-        "description": "Dados de saúde estão por toda parte, mas raramente conectados. Descubra como o CareHub integra dados de saúde para melhor tomada de decisão e cuidados personalizados."
+        "description": "Dados de saúde estão por toda parte, mas raramente conectados. Descubra como o CareHub integra dados de saúde para melhor tomada de decisão e cuidados personalizados.",
+        "mentions": [
+            {"@type": "DefinedTerm", "name": "Interoperabilidade", "url": "https://pcdinvestmentpartners.com/pt-br/glossario#interoperabilidade"},
+            {"@type": "DefinedTerm", "name": "FHIR", "url": "https://pcdinvestmentpartners.com/pt-br/glossario#fhir"},
+            {"@type": "DefinedTerm", "name": "PEP", "url": "https://pcdinvestmentpartners.com/pt-br/glossario#pep"},
+            {"@type": "DefinedTerm", "name": "CareHub", "url": "https://pcdinvestmentpartners.com/pt-br/glossario#carehub"}
+        ],
+        "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["article h1", "article .text-lg"]}
     }
     </script>
 {% endblock %}

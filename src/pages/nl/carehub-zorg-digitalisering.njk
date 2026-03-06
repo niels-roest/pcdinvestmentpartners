@@ -407,4 +407,63 @@ slug: "carehub-zorg-digitalisering"
         }
     }
     </script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "CareHub Ecosysteem",
+        "description": "Het CareHub-ecosysteem is een integratielaag die bestaande zorgsoftware — zoals ECD, EPD, planning, CRM en data-platforms — met elkaar verbindt via open standaarden (FHIR, HL7). Eén samenhangend digitaal zorgplatform voor de Nederlandse care-sector.",
+        "provider": {
+            "@type": "Organization",
+            "name": "PCD Investment Partners",
+            "url": "https://pcdinvestmentpartners.com"
+        },
+        "serviceType": "Digital Healthcare Platform",
+        "areaServed": [
+            {
+                "@type": "Country",
+                "name": "Netherlands"
+            },
+            {
+                "@type": "Place",
+                "name": "Europe"
+            }
+        ],
+        "availableLanguage": ["nl", "en", "es", "pt-BR"],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "CareHub Modules",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Interoperabiliteitslaag",
+                        "description": "FHIR- en HL7-gebaseerde integratie tussen zorgsystemen"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Unified Client View",
+                        "description": "Eén compleet cliëntbeeld over alle aangesloten systemen"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Workflow Automatisering",
+                        "description": "Automatisering van administratieve processen in de zorg"
+                    }
+                }
+            ]
+        },
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["h1", "h2", ".text-lg"]
+        }
+    }
+    </script>
 {% endblock %}

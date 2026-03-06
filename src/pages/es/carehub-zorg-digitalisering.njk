@@ -407,4 +407,21 @@ slug: "carehub-zorg-digitalisering"
         }
     }
     </script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Ecosistema CareHub",
+        "description": "El ecosistema CareHub es una capa de integración que conecta software sanitario existente — como HCE, planificación, CRM y plataformas de datos — mediante estándares abiertos (FHIR, HL7). Una plataforma digital sanitaria unificada para el sector de cuidados neerlandés.",
+        "provider": {"@type": "Organization", "name": "PCD Investment Partners", "url": "https://pcdinvestmentpartners.com"},
+        "serviceType": "Digital Healthcare Platform",
+        "areaServed": [{"@type": "Country", "name": "Netherlands"}, {"@type": "Place", "name": "Europe"}],
+        "availableLanguage": ["nl", "en", "es", "pt-BR"],
+        "hasOfferCatalog": {"@type": "OfferCatalog", "name": "CareHub Modules", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Capa de Interoperabilidad", "description": "Integración basada en FHIR y HL7 entre sistemas sanitarios"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Vista Unificada del Cliente", "description": "Una vista completa del cliente en todos los sistemas conectados"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Automatización de Flujos de Trabajo", "description": "Automatización de procesos administrativos en sanidad"}}]},
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["h1", "h2", ".text-lg"]
+        }
+    }
+    </script>
 {% endblock %}

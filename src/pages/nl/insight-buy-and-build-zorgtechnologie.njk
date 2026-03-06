@@ -31,7 +31,7 @@ slug: "insight-buy-and-build-zorgtechnologie"
                     <h1 class="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">Buy-and-build in zorgtechnologie: ecosysteem vs. roll-up</h1>
                     <p class="text-lg text-white/70 leading-relaxed mb-6">Waarom PCD kiest voor een ecosysteem-aanpak in plaats van een traditionele roll-up. De voordelen van interoperabiliteit boven consolidatie.</p>
                     <div class="flex items-center gap-4 text-sm text-white/50">
-                        <span>Door <strong class="text-white/70">PCD Investment Partners</strong></span>
+                        <span>Door <strong class="text-white/70">Niels Roest</strong></span>
                         <span aria-hidden="true">&middot;</span>
                         <time datetime="2025-12">December 2025</time>
                         <span aria-hidden="true">&middot;</span>
@@ -83,7 +83,7 @@ slug: "insight-buy-and-build-zorgtechnologie"
                 <div class="space-y-6 mb-8">
                     <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                         <h3 class="text-lg font-semibold text-navy-900 mb-2">1. Culturele integratie-uitdagingen</h3>
-                        <p class="text-gray-600 leading-relaxed">Zorgtechnologiebedrijven zijn vaak opgericht door professionals met diepe domeinkennis &ndash; artsen, verpleegkundigen, GGZ-specialisten. Een gedwongen fusie leidt tot cultuurverlies en vertrek van sleutelfiguren. Onderzoek toont aan dat <strong class="text-navy-900">60-70% van fusies</strong> in de technologiesector de verwachte synergiewaarde niet realiseert, mede door culturele wrijving.</p>
+                        <p class="text-gray-600 leading-relaxed">Zorgtechnologiebedrijven zijn vaak opgericht door professionals met diepe domeinkennis &ndash; artsen, verpleegkundigen, GGZ-specialisten. Een gedwongen fusie leidt tot cultuurverlies en vertrek van sleutelfiguren. Onderzoek van McKinsey &amp; Harvard Business Review toont aan dat <strong class="text-navy-900">60-70% van fusies</strong> in de technologiesector de verwachte synergiewaarde niet realiseert, mede door culturele wrijving.</p>
                     </div>
                     <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                         <h3 class="text-lg font-semibold text-navy-900 mb-2">2. Verlies van gespecialiseerde kennis</h3>
@@ -95,7 +95,7 @@ slug: "insight-buy-and-build-zorgtechnologie"
                     </div>
                     <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                         <h3 class="text-lg font-semibold text-navy-900 mb-2">4. Interoperabiliteit gaat verloren</h3>
-                        <p class="text-gray-600 leading-relaxed">Paradoxaal genoeg vermindert consolidatie vaak de interoperabiliteit. Waar afzonderlijke bedrijven via open API&rsquo;s en standaarden als FHIR en HL7 communiceerden met het bredere zorglandschap, cre&euml;ert een gesloten monoplatform juist nieuwe datasilo&rsquo;s. Dit staat haaks op de richting die de <strong class="text-navy-900">Wegiz en het IZA</strong> voorschrijven.</p>
+                        <p class="text-gray-600 leading-relaxed">Paradoxaal genoeg vermindert consolidatie vaak de <a href="{{ langPrefix }}/woordenlijst#interoperabiliteit" class="text-brand-blue hover:text-brand-blue-dark font-medium">interoperabiliteit</a>. Waar afzonderlijke bedrijven via open API&rsquo;s en standaarden als FHIR en HL7 communiceerden met het bredere zorglandschap, cre&euml;ert een gesloten monoplatform juist nieuwe datasilo&rsquo;s. Dit staat haaks op de richting die de <strong class="text-navy-900">Wegiz en het IZA</strong> voorschrijven.</p>
                     </div>
                 </div>
 
@@ -381,8 +381,11 @@ slug: "insight-buy-and-build-zorgtechnologie"
         "@type": "Article",
         "headline": "Buy-and-build in zorgtechnologie: ecosysteem vs. roll-up",
         "author": {
-            "@type": "Organization",
-            "name": "PCD Investment Partners"
+            "@type": "Person",
+            "@id": "https://pcdinvestmentpartners.com/auteur-niels-roest#person",
+            "name": "Niels Roest",
+            "jobTitle": "CAIO & Chairman",
+            "url": "https://pcdinvestmentpartners.com/auteur-niels-roest"
         },
         "publisher": {
             "@type": "Organization",
@@ -396,7 +399,18 @@ slug: "insight-buy-and-build-zorgtechnologie"
         "dateModified": "2025-12-01",
         "image": "https://pcdinvestmentpartners.com/assets/images/insights-analytics-workspace.webp",
         "url": "https://pcdinvestmentpartners.com/insight-buy-and-build-zorgtechnologie",
-        "description": "Waarom PCD kiest voor een ecosysteem-aanpak in plaats van een traditionele roll-up in zorgtechnologie. De voordelen van interoperabiliteit boven consolidatie."
+        "description": "Waarom PCD kiest voor een ecosysteem-aanpak in plaats van een traditionele roll-up in zorgtechnologie. De voordelen van interoperabiliteit boven consolidatie.",
+        "mentions": [
+            {"@type": "DefinedTerm", "name": "Buy-and-build", "url": "https://pcdinvestmentpartners.com/woordenlijst#buy-and-build"},
+            {"@type": "DefinedTerm", "name": "Zorgtechnologie", "url": "https://pcdinvestmentpartners.com/woordenlijst#zorgtechnologie"},
+            {"@type": "DefinedTerm", "name": "Interoperabiliteit", "url": "https://pcdinvestmentpartners.com/woordenlijst#interoperabiliteit"},
+            {"@type": "DefinedTerm", "name": "CareHub", "url": "https://pcdinvestmentpartners.com/woordenlijst#carehub"},
+            {"@type": "DefinedTerm", "name": "SaaS", "url": "https://pcdinvestmentpartners.com/woordenlijst#saas"}
+        ],
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["article h1", "article .text-lg"]
+        }
     }
     </script>
 {% endblock %}

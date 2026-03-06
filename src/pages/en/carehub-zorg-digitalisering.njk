@@ -407,4 +407,21 @@ slug: "carehub-zorg-digitalisering"
         }
     }
     </script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "CareHub Ecosystem",
+        "description": "The CareHub ecosystem is an integration layer that connects existing healthcare software — such as EHR, scheduling, CRM, and data platforms — via open standards (FHIR, HL7). One unified digital healthcare platform for the Dutch care sector.",
+        "provider": {"@type": "Organization", "name": "PCD Investment Partners", "url": "https://pcdinvestmentpartners.com"},
+        "serviceType": "Digital Healthcare Platform",
+        "areaServed": [{"@type": "Country", "name": "Netherlands"}, {"@type": "Place", "name": "Europe"}],
+        "availableLanguage": ["nl", "en", "es", "pt-BR"],
+        "hasOfferCatalog": {"@type": "OfferCatalog", "name": "CareHub Modules", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Interoperability Layer", "description": "FHIR and HL7-based integration between healthcare systems"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Unified Client View", "description": "One complete client view across all connected systems"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Workflow Automation", "description": "Automation of administrative processes in healthcare"}}]},
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["h1", "h2", ".text-lg"]
+        }
+    }
+    </script>
 {% endblock %}

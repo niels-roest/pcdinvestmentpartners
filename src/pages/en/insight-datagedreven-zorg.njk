@@ -31,7 +31,7 @@ slug: "insight-datagedreven-zorg"
                     <h1 class="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">From data silos to data-driven care</h1>
                     <p class="text-lg text-white/70 leading-relaxed mb-6">Healthcare data is everywhere, but rarely connected. How the CareHub unlocks healthcare data for better decision-making and personalized care.</p>
                     <div class="flex items-center gap-4 text-sm text-white/50">
-                        <span>By <strong class="text-white/70">PCD Investment Partners</strong></span>
+                        <span>By <strong class="text-white/70">Niels Roest</strong></span>
                         <span aria-hidden="true">&middot;</span>
                         <time datetime="2025-11">November 2025</time>
                         <span aria-hidden="true">&middot;</span>
@@ -326,8 +326,11 @@ slug: "insight-datagedreven-zorg"
         "@type": "Article",
         "headline": "From data silos to data-driven care",
         "author": {
-            "@type": "Organization",
-            "name": "PCD Investment Partners"
+            "@type": "Person",
+            "@id": "https://pcdinvestmentpartners.com/auteur-niels-roest#person",
+            "name": "Niels Roest",
+            "jobTitle": "CAIO & Chairman",
+            "url": "https://pcdinvestmentpartners.com/auteur-niels-roest"
         },
         "publisher": {
             "@type": "Organization",
@@ -338,9 +341,17 @@ slug: "insight-datagedreven-zorg"
             }
         },
         "datePublished": "2025-11-15",
+        "dateModified": "2025-11-15",
         "image": "https://pcdinvestmentpartners.com/assets/images/insights-doctor-dashboard.webp",
         "url": "https://pcdinvestmentpartners.com/insight-datagedreven-zorg",
-        "description": "Healthcare data is everywhere, but rarely connected. Discover how the CareHub unlocks healthcare data for better decision-making and personalized care through open standards."
+        "description": "Healthcare data is everywhere, but rarely connected. Discover how the CareHub unlocks healthcare data for better decision-making and personalized care through open standards.",
+        "mentions": [
+            {"@type": "DefinedTerm", "name": "Interoperability", "url": "https://pcdinvestmentpartners.com/en/glossary#interoperability"},
+            {"@type": "DefinedTerm", "name": "FHIR", "url": "https://pcdinvestmentpartners.com/en/glossary#fhir"},
+            {"@type": "DefinedTerm", "name": "EHR", "url": "https://pcdinvestmentpartners.com/en/glossary#ehr"},
+            {"@type": "DefinedTerm", "name": "CareHub", "url": "https://pcdinvestmentpartners.com/en/glossary#carehub"}
+        ],
+        "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["article h1", "article .text-lg"]}
     }
     </script>
 {% endblock %}

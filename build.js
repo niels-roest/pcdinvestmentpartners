@@ -3,6 +3,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const matter = require('gray-matter');
 const { globSync } = require('glob');
+const { execSync } = require('child_process');
 
 // ============================================
 // Configuration
@@ -31,6 +32,13 @@ console.log('Copying static assets...');
 fs.copySync(path.join(__dirname, 'assets'), path.join(DIST, 'assets'));
 fs.copySync(path.join(__dirname, 'css'), path.join(DIST, 'css'));
 fs.copySync(path.join(__dirname, 'js'), path.join(DIST, 'js'));
+
+// Build Tailwind CSS
+console.log('Building Tailwind CSS...');
+execSync('npx tailwindcss -i src/css/tailwind-input.css -o dist/css/tailwind.css --minify', {
+  cwd: __dirname,
+  stdio: 'inherit',
+});
 
 const staticFiles = ['CNAME', '.nojekyll'];
 for (const file of staticFiles) {
@@ -245,7 +253,7 @@ for (const lang of LANGUAGES) {
       sitemapEntries.push({
         url: `${SITE_URL}${canonicalPath}`,
         lang: lang.code,
-        lastmod: new Date().toISOString().split('T')[0],
+        lastmod: fs.statSync(pageFile).mtime.toISOString().split('T')[0],
         pageName,
         isIndex,
       });

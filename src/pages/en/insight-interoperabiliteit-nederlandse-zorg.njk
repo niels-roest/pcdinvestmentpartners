@@ -31,7 +31,7 @@ slug: "insight-interoperabiliteit-nederlandse-zorg"
                     <h1 class="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">The future of interoperability in Dutch healthcare</h1>
                     <p class="text-lg text-white/70 leading-relaxed mb-6">How open standards such as FHIR and HL7 are laying the foundation for an integrated healthcare landscape. An analysis of Wegiz, EHDS and the role of the CareHub ecosystem.</p>
                     <div class="flex items-center gap-4 text-sm text-white/50">
-                        <span>By PCD Investment Partners</span>
+                        <span>By <strong class="text-white/70">Niels Roest</strong></span>
                         <span aria-hidden="true">&middot;</span>
                         <time datetime="2026-01">January 2026</time>
                         <span aria-hidden="true">&middot;</span>
@@ -50,7 +50,7 @@ slug: "insight-interoperabiliteit-nederlandse-zorg"
                 <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 mb-6">The fragmented healthcare landscape</h2>
                 <p class="text-gray-600 leading-relaxed mb-6">Dutch healthcare ranks among the best in the world, but behind the scenes the sector is grappling with a fundamental problem: more than <strong class="text-navy-900">1,000 different software systems</strong> that barely communicate with each other. From electronic client records (ECRs) and GP information systems to pharmacy software and imaging platforms &ndash; each system operates as a standalone island.</p>
                 <p class="text-gray-600 leading-relaxed mb-6">The consequences are felt at every level. Patients must share their medical history anew with each care provider. GPs have no visibility into medication prescribed by a specialist. Nurses manually enter the same data into multiple systems. This fragmentation leads not only to frustration, but also to medical risks: information that is not available in time can lead to incorrect diagnoses or unnecessary duplicate examinations.</p>
-                <p class="text-gray-600 leading-relaxed mb-6">Recent research shows that <strong class="text-navy-900">70% of healthcare organisations</strong> are actively seeking solutions for better data exchange. There is a growing recognition that interoperability &ndash; the ability of systems to seamlessly exchange and interpret data &ndash; is no longer a luxury, but an absolute necessity for future-proof care.</p>
+                <p class="text-gray-600 leading-relaxed mb-6">The Nictiz Monitor Digital Care shows that <strong class="text-navy-900">70% of healthcare organisations</strong> are actively seeking solutions for better data exchange. There is a growing recognition that interoperability &ndash; the ability of systems to seamlessly exchange and interpret data &ndash; is no longer a luxury, but an absolute necessity for future-proof care.</p>
                 <p class="text-gray-600 leading-relaxed mb-8">The question is no longer <em>whether</em> interoperability will come, but <em>how</em> we accelerate the transition to an integrated healthcare landscape. In this article, we analyse the legislative, technical and practical dimensions of this transformation.</p>
 
                 <!-- Stats callout -->
@@ -308,8 +308,11 @@ slug: "insight-interoperabiliteit-nederlandse-zorg"
         "@type": "Article",
         "headline": "The future of interoperability in Dutch healthcare",
         "author": {
-            "@type": "Organization",
-            "name": "PCD Investment Partners"
+            "@type": "Person",
+            "@id": "https://pcdinvestmentpartners.com/auteur-niels-roest#person",
+            "name": "Niels Roest",
+            "jobTitle": "CAIO & Chairman",
+            "url": "https://pcdinvestmentpartners.com/auteur-niels-roest"
         },
         "publisher": {
             "@type": "Organization",
@@ -323,7 +326,16 @@ slug: "insight-interoperabiliteit-nederlandse-zorg"
         "dateModified": "2026-01-15",
         "image": "https://pcdinvestmentpartners.com/assets/images/insights-ecosystem-diagram.webp",
         "url": "https://pcdinvestmentpartners.com/insight-interoperabiliteit-nederlandse-zorg",
-        "description": "How open standards such as FHIR and HL7 are laying the foundation for integrated care in the Netherlands. The impact of Wegiz, EHDS and the CareHub ecosystem."
+        "description": "How open standards such as FHIR and HL7 are laying the foundation for integrated care in the Netherlands. The impact of Wegiz, EHDS and the CareHub ecosystem.",
+        "mentions": [
+            {"@type": "DefinedTerm", "name": "FHIR", "url": "https://pcdinvestmentpartners.com/en/glossary#fhir"},
+            {"@type": "DefinedTerm", "name": "HL7", "url": "https://pcdinvestmentpartners.com/en/glossary#hl7"},
+            {"@type": "DefinedTerm", "name": "Interoperability", "url": "https://pcdinvestmentpartners.com/en/glossary#interoperability"},
+            {"@type": "DefinedTerm", "name": "Wegiz", "url": "https://pcdinvestmentpartners.com/en/glossary#wegiz"},
+            {"@type": "DefinedTerm", "name": "EHDS", "url": "https://pcdinvestmentpartners.com/en/glossary#ehds"},
+            {"@type": "DefinedTerm", "name": "CareHub", "url": "https://pcdinvestmentpartners.com/en/glossary#carehub"}
+        ],
+        "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["article h1", "article .text-lg"]}
     }
     </script>
 {% endblock %}
