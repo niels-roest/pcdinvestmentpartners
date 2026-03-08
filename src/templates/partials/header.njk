@@ -15,11 +15,11 @@
             <div class="hidden lg:flex lg:items-center lg:space-x-1">
                 <!-- Ecosysteem dropdown -->
                 <div class="relative group">
-                    <button class="nav-link flex items-center px-4 py-2 text-sm font-medium text-white/90 hover:text-white transition-colors" aria-expanded="false" aria-haspopup="true">
+                    <button class="nav-link flex items-center px-4 py-2 text-sm font-medium text-white/90 hover:text-white transition-colors" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-ecosystem">
                         {{ t.nav.ecosystem }}
                         <svg class="ml-1 w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                     </button>
-                    <div class="dropdown-menu absolute left-0 top-full pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                    <div id="dropdown-ecosystem" class="dropdown-menu absolute left-0 top-full pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200" role="menu">
                         <div class="bg-white rounded-lg shadow-xl border border-gray-100 py-2">
                             <a href="{{ langPrefix }}/carehub-zorg-digitalisering" class="block px-4 py-3 text-sm text-gray-700 hover:bg-brand-light hover:text-brand-blue transition-colors">
                                 <span class="font-semibold">{{ t.nav.ecosystem_carehub }}</span>
@@ -43,11 +43,11 @@
 
                 <!-- Over PCD dropdown -->
                 <div class="relative group">
-                    <button class="nav-link flex items-center px-4 py-2 text-sm font-medium text-white/90 hover:text-white transition-colors" aria-expanded="false" aria-haspopup="true">
+                    <button class="nav-link flex items-center px-4 py-2 text-sm font-medium text-white/90 hover:text-white transition-colors" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-about">
                         {{ t.nav.about }}
                         <svg class="ml-1 w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                     </button>
-                    <div class="dropdown-menu absolute left-0 top-full pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                    <div id="dropdown-about" class="dropdown-menu absolute left-0 top-full pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200" role="menu">
                         <div class="bg-white rounded-lg shadow-xl border border-gray-100 py-2">
                             <a href="{{ langPrefix }}/pioneering-health-care-technology" class="block px-4 py-3 text-sm text-gray-700 hover:bg-brand-light hover:text-brand-blue transition-colors">
                                 <span class="font-semibold">{{ t.nav.about_pioneering }}</span>

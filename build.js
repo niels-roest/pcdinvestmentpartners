@@ -310,6 +310,26 @@ console.log('Generating robots.txt...');
 const robotsTxt = `User-agent: *
 Allow: /
 
+# AI crawlers: allow retrieval/grounding but disallow training
+# Compliant with EU Directive 2019/790 Art. 4
+User-agent: GPTBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+
+# Content signals (proposed standard)
+# search=yes — allow search engine indexing
+# ai-train=no — disallow AI model training
+# ai-input=yes — allow AI retrieval/grounding (RAG)
+
 Sitemap: ${SITE_URL}/sitemap.xml
 `;
 fs.writeFileSync(path.join(DIST, 'robots.txt'), robotsTxt);

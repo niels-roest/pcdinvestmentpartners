@@ -309,6 +309,26 @@ img {
     .text-6xl { font-size: 2.25rem; }
 }
 
+/* Stats grid: prevent overlap on small screens */
+@media (max-width: 639px) {
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem 1rem;
+    }
+    .stats-grid .stat-value {
+        font-size: 1.75rem;
+    }
+    .stats-grid .stat-unit {
+        font-size: 1.75rem;
+    }
+}
+@media (max-width: 374px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+}
+
 /* Tablet adjustments */
 @media (min-width: 768px) and (max-width: 1023px) {
     .grid.md\:grid-cols-3 {

@@ -51,26 +51,38 @@ slug: ""
         <!-- ============================================ -->
         <section class="relative -mt-16 z-10 pb-12" aria-label="Números-chave">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="bg-white rounded-2xl shadow-xl p-8 sm:p-10 grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <dl class="stats-grid bg-white rounded-2xl shadow-xl p-8 sm:p-10 grid grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="text-center">
-                        <span class="stat-counter text-3xl sm:text-4xl font-bold text-navy-900" data-target="310">0</span><span class="text-3xl sm:text-4xl font-bold text-brand-blue">%</span>
-                        <p class="mt-2 text-sm text-gray-600">Crescimento do mercado de healthtech</p>
-                        <p class="mt-1 text-[10px] text-gray-400">Fonte: Precedence Research, 2024</p>
+                        <dt class="sr-only">Crescimento do mercado de healthtech</dt>
+                        <dd>
+                            <span class="stat-counter stat-value text-3xl sm:text-4xl font-bold text-navy-900" data-target="310">0</span><span class="stat-unit text-3xl sm:text-4xl font-bold text-brand-blue">%</span>
+                            <p class="mt-2 text-sm text-gray-600" aria-hidden="true">Crescimento do mercado de healthtech</p>
+                            <p class="mt-1 text-[10px] text-gray-400">Fonte: Precedence Research, 2024</p>
+                        </dd>
                     </div>
                     <div class="text-center">
-                        <span class="stat-counter text-3xl sm:text-4xl font-bold text-navy-900" data-target="25">0</span><span class="text-3xl sm:text-4xl font-bold text-brand-blue">+</span>
-                        <p class="mt-2 text-sm text-gray-600">Empresas previstas no ecossistema</p>
+                        <dt class="sr-only">Empresas previstas no ecossistema</dt>
+                        <dd>
+                            <span class="stat-counter stat-value text-3xl sm:text-4xl font-bold text-navy-900" data-target="25">0</span><span class="stat-unit text-3xl sm:text-4xl font-bold text-brand-blue">+</span>
+                            <p class="mt-2 text-sm text-gray-600" aria-hidden="true">Empresas previstas no ecossistema</p>
+                        </dd>
                     </div>
                     <div class="text-center">
-                        <span class="stat-counter text-3xl sm:text-4xl font-bold text-navy-900" data-target="60">0</span><span class="text-3xl sm:text-4xl font-bold text-brand-blue">%</span>
-                        <p class="mt-2 text-sm text-gray-600">Menos carga administrativa</p>
-                        <p class="mt-1 text-[10px] text-gray-400">Fonte: Estudos de caso CareHub</p>
+                        <dt class="sr-only">Menos carga administrativa</dt>
+                        <dd>
+                            <span class="stat-counter stat-value text-3xl sm:text-4xl font-bold text-navy-900" data-target="60">0</span><span class="stat-unit text-3xl sm:text-4xl font-bold text-brand-blue">%</span>
+                            <p class="mt-2 text-sm text-gray-600" aria-hidden="true">Menos carga administrativa</p>
+                            <p class="mt-1 text-[10px] text-gray-400">Fonte: Estudos de caso CareHub</p>
+                        </dd>
                     </div>
                     <div class="text-center">
-                        <span class="text-3xl sm:text-4xl font-bold text-navy-900">24/7</span>
-                        <p class="mt-2 text-sm text-gray-600">Acessibilidade digital</p>
+                        <dt class="sr-only">Acessibilidade digital</dt>
+                        <dd>
+                            <span class="stat-value text-3xl sm:text-4xl font-bold text-navy-900">24/7</span>
+                            <p class="mt-2 text-sm text-gray-600" aria-hidden="true">Acessibilidade digital</p>
+                        </dd>
                     </div>
-                </div>
+                </dl>
             </div>
         </section>
 
@@ -340,67 +352,67 @@ slug: ""
                 <div class="space-y-4 fade-in-up" id="faq-accordion">
                     <!-- FAQ 1 -->
                     <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
-                        <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+                        <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false" aria-controls="faq-answer-1">
                             <span class="font-semibold text-navy-900 pr-4">O CareHub é um novo sistema de TI ou um fundo de investimento?</span>
                             <svg class="faq-icon w-5 h-5 text-brand-blue flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
                         </button>
-                        <div class="faq-content hidden px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">O CareHub é, em primeiro lugar, um ecossistema — não um produto de software único nem um veículo de investimento. É uma camada de integração que conecta softwares de saúde existentes e comprovados (PEP, agendamento, CRM, plataformas de dados) entre si. A PCD Investment Partners investe nas empresas que juntas formam esse ecossistema, para que as organizações de saúde tenham acesso a soluções best-of-breed por meio de um único ambiente digital coeso.</p>
+                        <div id="faq-answer-1" class="faq-content hidden px-6 pb-5" role="region">
+                            <p class="text-gray-600 leading-relaxed">O CareHub é, em primeiro lugar, um ecossistema — não um produto de software único nem um veículo de investimento. É uma camada de integração que conecta softwares de saúde existentes e comprovados (<a href="{{ langPrefix }}/woordenlijst" class="text-brand-blue hover:underline">PEP</a>, agendamento, CRM, plataformas de dados) entre si. A PCD Investment Partners investe nas empresas que juntas formam esse ecossistema, para que as organizações de saúde tenham acesso a soluções best-of-breed por meio de um único ambiente digital coeso.</p>
                         </div>
                     </div>
 
                     <!-- FAQ 2 -->
                     <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
-                        <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+                        <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false" aria-controls="faq-answer-2">
                             <span class="font-semibold text-navy-900 pr-4">Como o CareHub se diferencia de um PEP tradicional?</span>
                             <svg class="faq-icon w-5 h-5 text-brand-blue flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
                         </button>
-                        <div class="faq-content hidden px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">Um PEP é apenas um componente do cenário digital de saúde. O CareHub conecta todos esses componentes: prontuário eletrônico do paciente, agendamento, faturamento, CRM, portais de pacientes e análise de dados. Em vez de um único fornecedor para tudo, o CareHub opta pela interoperabilidade — padrões abertos como FHIR e HL7 garantem que os sistemas funcionem perfeitamente juntos. O resultado: uma visão completa do paciente sem vendor lock-in.</p>
+                        <div id="faq-answer-2" class="faq-content hidden px-6 pb-5" role="region">
+                            <p class="text-gray-600 leading-relaxed">Um <a href="{{ langPrefix }}/woordenlijst" class="text-brand-blue hover:underline">PEP</a> é apenas um componente do cenário digital de saúde. O <a href="{{ langPrefix }}/carehub-zorg-digitalisering" class="text-brand-blue hover:underline">CareHub</a> conecta todos esses componentes: prontuário eletrônico do paciente, agendamento, faturamento, CRM, portais de pacientes e análise de dados. Em vez de um único fornecedor para tudo, o CareHub opta pela <a href="{{ langPrefix }}/woordenlijst" class="text-brand-blue hover:underline">interoperabilidade</a> — padrões abertos como FHIR e HL7 garantem que os sistemas funcionem perfeitamente juntos. O resultado: uma visão completa do paciente sem vendor lock-in.</p>
                         </div>
                     </div>
 
                     <!-- FAQ 3 -->
                     <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
-                        <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+                        <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false" aria-controls="faq-answer-3">
                             <span class="font-semibold text-navy-900 pr-4">Para quais setores de saúde o CareHub é adequado?</span>
                             <svg class="faq-icon w-5 h-5 text-brand-blue flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
                         </button>
-                        <div class="faq-content hidden px-6 pb-5">
+                        <div id="faq-answer-3" class="faq-content hidden px-6 pb-5" role="region">
                             <p class="text-gray-600 leading-relaxed">O CareHub foi projetado para todo o setor de cuidados de saúde na Europa: saúde mental, cuidados com a juventude, cuidados com idosos, cuidados de longo prazo, enfermagem domiciliar e reabilitação. Graças à sua estrutura modular e arquitetura aberta, o ecossistema pode ser adaptado aos fluxos de trabalho e requisitos de registro específicos de cada setor.</p>
                         </div>
                     </div>
 
                     <!-- FAQ 4 -->
                     <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
-                        <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+                        <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false" aria-controls="faq-answer-4">
                             <span class="font-semibold text-navy-900 pr-4">O CareHub é seguro e está em conformidade com a legislação?</span>
                             <svg class="faq-icon w-5 h-5 text-brand-blue flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
                         </button>
-                        <div class="faq-content hidden px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">Sim. Privacy-by-design e security-by-default são princípios fundamentais do ecossistema CareHub. Todas as soluções conectadas estão em conformidade com NEN 7510, ISO 27001 e LGPD/GDPR. Além disso, antecipamos a Wegiz (Lei de troca eletrônica de dados na saúde) e o European Health Data Space (EHDS), para que as organizações de saúde digitalizem de forma preparada para o futuro.</p>
+                        <div id="faq-answer-4" class="faq-content hidden px-6 pb-5" role="region">
+                            <p class="text-gray-600 leading-relaxed">Sim. Privacy-by-design e security-by-default são princípios fundamentais do ecossistema CareHub. Todas as soluções conectadas estão em conformidade com NEN 7510, ISO 27001 e LGPD/GDPR. Além disso, antecipamos a <a href="{{ langPrefix }}/woordenlijst" class="text-brand-blue hover:underline">Wegiz</a> (Lei de troca eletrônica de dados na saúde) e o <a href="{{ langPrefix }}/woordenlijst" class="text-brand-blue hover:underline">EHDS</a> (European Health Data Space), para que as organizações de saúde digitalizem de forma preparada para o futuro.</p>
                         </div>
                     </div>
 
                     <!-- FAQ 5 -->
                     <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
-                        <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+                        <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false" aria-controls="faq-answer-5">
                             <span class="font-semibold text-navy-900 pr-4">Como minha empresa de healthtech pode se juntar ao ecossistema?</span>
                             <svg class="faq-icon w-5 h-5 text-brand-blue flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
                         </button>
-                        <div class="faq-content hidden px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">Empresas de healthtech podem se juntar ao CareHub de diversas maneiras. Como scale-up, você pode se beneficiar da integração em um ecossistema maior, acesso a uma ampla rede de clientes de saúde e suporte em financiamento e escalabilidade. A PCD oferece um modelo buy-and-build no qual softwares de saúde comprovados são reunidos em uma única plataforma robusta. <a href="{{ langPrefix }}/contact" class="text-brand-blue hover:underline">Entre em contato</a> para discutir as possibilidades.</p>
+                        <div id="faq-answer-5" class="faq-content hidden px-6 pb-5" role="region">
+                            <p class="text-gray-600 leading-relaxed">Empresas de healthtech podem se juntar ao CareHub de diversas maneiras. Como scale-up, você pode se beneficiar da integração em um ecossistema maior, acesso a uma ampla rede de clientes de saúde e suporte em financiamento e escalabilidade. A PCD oferece um modelo <a href="{{ langPrefix }}/investeerders-partners" class="text-brand-blue hover:underline">buy-and-build</a> no qual softwares de saúde comprovados são reunidos em uma única plataforma robusta. <a href="{{ langPrefix }}/contact" class="text-brand-blue hover:underline">Entre em contato</a> para discutir as possibilidades.</p>
                         </div>
                     </div>
 
                     <!-- FAQ 6 -->
                     <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
-                        <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false">
+                        <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left" aria-expanded="false" aria-controls="faq-answer-6">
                             <span class="font-semibold text-navy-900 pr-4">O que diferencia a PCD Investment Partners de outros investidores na área de saúde?</span>
                             <svg class="faq-icon w-5 h-5 text-brand-blue flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
                         </button>
-                        <div class="faq-content hidden px-6 pb-5">
-                            <p class="text-gray-600 leading-relaxed">A PCD não é uma empresa tradicional de private equity. Nós não investimos para cortar e colar, mas para construir um ecossistema coeso. Nossa estratégia buy-and-build foca na criação de valor de longo prazo: reunimos a melhor tecnologia de saúde, estimulamos a interoperabilidade por meio de padrões abertos e construímos a espinha dorsal digital do setor de saúde europeu. Os princípios ESG e o impacto social estão no centro de cada investimento.</p>
+                        <div id="faq-answer-6" class="faq-content hidden px-6 pb-5" role="region">
+                            <p class="text-gray-600 leading-relaxed">A PCD não é uma empresa tradicional de private equity. Nós não investimos para cortar e colar, mas para construir um ecossistema coeso. Nossa estratégia <a href="{{ langPrefix }}/investeerders-partners" class="text-brand-blue hover:underline">buy-and-build</a> foca na criação de valor de longo prazo: reunimos a melhor tecnologia de saúde, estimulamos a <a href="{{ langPrefix }}/woordenlijst" class="text-brand-blue hover:underline">interoperabilidade</a> por meio de padrões abertos e construímos a espinha dorsal digital do setor de saúde europeu. Os princípios <a href="{{ langPrefix }}/esg-verklaring" class="text-brand-blue hover:underline">ESG</a> e o impacto social estão no centro de cada investimento.</p>
                         </div>
                     </div>
                 </div>
@@ -411,17 +423,47 @@ slug: ""
         <!-- CTA SECTION                                  -->
         <!-- ============================================ -->
         <section class="py-20 lg:py-28 bg-gradient-to-br from-brand-blue to-brand-blue-dark" aria-label="Chamada para ação">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-up">
-                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Pronto para acelerar a transformação digital na sua organização de saúde?</h2>
-                <p class="text-lg text-white/80 mb-8 max-w-2xl mx-auto">Descubra como o ecossistema CareHub pode fortalecer sua organização de saúde, empresa de healthtech ou carteira de investimentos. Entre em contato com nossa equipe hoje mesmo.</p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="{{ langPrefix }}/contact" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-brand-blue bg-white hover:bg-gray-100 rounded-lg transition-colors">
-                        Entre em contato
-                        <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                    </a>
-                    <a href="{{ langPrefix }}/carehub-zorg-digitalisering" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white border-2 border-white/30 hover:border-white/60 rounded-lg transition-colors">
-                        Saiba mais sobre o CareHub
-                    </a>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                    <div class="fade-in-up">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Pronto para acelerar a transformação digital na sua organização de saúde?</h2>
+                        <p class="text-lg text-white/80 mb-8">Descubra como o ecossistema CareHub pode fortalecer sua organização de saúde, empresa de healthtech ou carteira de investimentos. Entre em contato com nossa equipe hoje mesmo.</p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="{{ langPrefix }}/carehub-zorg-digitalisering" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white border-2 border-white/30 hover:border-white/60 rounded-lg transition-colors">
+                                Saiba mais sobre o CareHub
+                                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fade-in-up" style="animation-delay: 0.15s;">
+                        <form action="https://formsubmit.co/info@pcdinvestmentpartners.com" method="POST" class="bg-white rounded-2xl p-6 sm:p-8 shadow-xl space-y-4">
+                            <input type="hidden" name="_subject" value="Formulário de contato homepage - PCD Investment Partners">
+                            <input type="hidden" name="_next" value="https://pcdinvestmentpartners.com/contact">
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_captcha" value="true">
+                            <h3 class="text-lg font-bold text-navy-900 mb-2">Entre em contato diretamente</h3>
+                            <div>
+                                <label for="cta-name" class="block text-sm font-semibold text-navy-900 mb-1">Nome <span class="text-red-500" aria-hidden="true">*</span></label>
+                                <input type="text" id="cta-name" name="name" required autocomplete="name" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent" placeholder="Seu nome">
+                            </div>
+                            <div>
+                                <label for="cta-email" class="block text-sm font-semibold text-navy-900 mb-1">E-mail <span class="text-red-500" aria-hidden="true">*</span></label>
+                                <input type="email" id="cta-email" name="email" required autocomplete="email" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent" placeholder="seu@email.com">
+                            </div>
+                            <div>
+                                <label for="cta-org" class="block text-sm font-semibold text-navy-900 mb-1">Organização</label>
+                                <input type="text" id="cta-org" name="organization" autocomplete="organization" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent" placeholder="Nome da sua organização">
+                            </div>
+                            <div>
+                                <label for="cta-message" class="block text-sm font-semibold text-navy-900 mb-1">Mensagem <span class="text-red-500" aria-hidden="true">*</span></label>
+                                <textarea id="cta-message" name="message" required rows="3" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent resize-y" placeholder="Como podemos ajudá-lo?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-brand-blue hover:bg-brand-blue-dark rounded-lg transition-colors">
+                                Enviar mensagem
+                                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -430,14 +472,35 @@ slug: ""
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "PCD Investment Partners",
-        "url": "https://pcdinvestmentpartners.com",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://pcdinvestmentpartners.com/?s={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
+        "@type": "HowTo",
+        "name": "Como funciona o ecossistema CareHub?",
+        "description": "Do prontuário eletrônico do paciente ao telemonitoramento e telemedicina: o CareHub conecta todos os elos da cadeia de saúde por meio de uma única camada de integração segura.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Conectar",
+                "text": "Conecte sistemas existentes — PEP, agendamento e faturamento — ao CareHub por meio de padrões abertos."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Integrar",
+                "text": "A camada de integração normaliza os dados de saúde e cria uma visão única do paciente para todos os profissionais de saúde envolvidos."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Automatizar",
+                "text": "A automação de fluxos de trabalho reduz a carga de registro e dá aos profissionais de saúde mais tempo para o paciente."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Escalar",
+                "text": "Da implementação local a um ecossistema de saúde digital regional e europeu por meio de arquitetura escalável."
+            }
+        ]
     }
     </script>
 <script type="application/ld+json">
