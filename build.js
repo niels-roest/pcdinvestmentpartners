@@ -40,7 +40,7 @@ execSync('npx tailwindcss -i src/css/tailwind-input.css -o dist/css/tailwind.css
   stdio: 'inherit',
 });
 
-const staticFiles = ['CNAME', '.nojekyll'];
+const staticFiles = ['CNAME', '.nojekyll', 'google9bcc3954f46db140.html'];
 for (const file of staticFiles) {
   const src = path.join(__dirname, file);
   if (fs.existsSync(src)) {
