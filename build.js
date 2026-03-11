@@ -58,7 +58,7 @@ const mainJsPath = path.join(DIST, 'js', 'main.js');
 if (fs.existsSync(mainJsPath)) {
   let js = fs.readFileSync(mainJsPath, 'utf8');
   js = js.replace(/\/\*[\s\S]*?\*\//g, '');           // strip block comments
-  js = js.replace(/\/\/.*$/gm, '');                    // strip line comments
+  js = js.replace(/^\s*\/\/.*$/gm, '');                 // strip full-line comments only (safe for URLs)
   js = js.replace(/\s*\n\s*/g, '\n');                  // collapse whitespace
   js = js.replace(/\n{2,}/g, '\n');                    // collapse multiple newlines
   fs.writeFileSync(mainJsPath, js.trim());
