@@ -24,8 +24,6 @@
                     <li><a href="{{ langPrefix }}/zorgorganisaties" class="text-sm text-white/60 hover:text-white transition-colors">{{ t.nav.ecosystem_zorgorganisaties }}</a></li>
                     <li><a href="{{ langPrefix }}/zorgtech-softwarebedrijven" class="text-sm text-white/60 hover:text-white transition-colors">{{ t.nav.ecosystem_zorgtech }}</a></li>
                     <li><a href="{{ langPrefix }}/investeerders-partners" class="text-sm text-white/60 hover:text-white transition-colors">{{ t.nav.ecosystem_investeerders }}</a></li>
-                    <li><a href="{{ langPrefix }}/cases" class="text-sm text-white/60 hover:text-white transition-colors">{{ t.nav.cases }}</a></li>
-                    <li><a href="{{ langPrefix }}/insights" class="text-sm text-white/60 hover:text-white transition-colors">{{ t.nav.insights }}</a></li>
                 </ul>
             </div>
 
@@ -36,16 +34,19 @@
                     <li><a href="{{ langPrefix }}/pioneering-health-care-technology" class="text-sm text-white/60 hover:text-white transition-colors">{{ t.nav.about_pioneering }}</a></li>
                     <li><a href="{{ langPrefix }}/leiderschap" class="text-sm text-white/60 hover:text-white transition-colors">{{ t.nav.about_leadership }}</a></li>
                     <li><a href="{{ langPrefix }}/esg-verklaring" class="text-sm text-white/60 hover:text-white transition-colors">{{ t.nav.about_esg }}</a></li>
-                    <li><a href="{{ langPrefix }}/contact" class="text-sm text-white/60 hover:text-white transition-colors">{{ t.nav.contact }}</a></li>
-                    <li><a href="{{ langPrefix }}/woordenlijst" class="text-sm text-white/60 hover:text-white transition-colors">{{ t.footer.glossary }}</a></li>
                     <li><a href="{{ langPrefix }}/strategie" class="text-sm text-white/60 hover:text-white transition-colors">{{ t.footer.strategy }}</a></li>
                 </ul>
             </div>
 
-            <!-- Column 4: Contact -->
+            <!-- Column 4: Kennis & Contact -->
             <div>
                 <h3 class="text-sm font-semibold uppercase tracking-wider text-white/50 mb-4">{{ t.footer.col_contact }}</h3>
-                <address class="not-italic space-y-3 text-sm text-white/60">
+                <ul class="space-y-3">
+                    <li><a href="{{ langPrefix }}/cases" class="text-sm text-white/60 hover:text-white transition-colors">{{ t.nav.cases }}</a></li>
+                    <li><a href="{{ langPrefix }}/insights" class="text-sm text-white/60 hover:text-white transition-colors">{{ t.nav.insights }}</a></li>
+                    <li><a href="{{ langPrefix }}/woordenlijst" class="text-sm text-white/60 hover:text-white transition-colors">{{ t.footer.glossary }}</a></li>
+                </ul>
+                <address class="not-italic space-y-3 text-sm text-white/60 mt-6">
                     <p>{{ t.footer.address | safe }}</p>
                     <p>
                         <a id="footer-email" href="#" class="hover:text-white transition-colors"></a>
