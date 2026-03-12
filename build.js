@@ -188,16 +188,21 @@ for (const lang of LANGUAGES) {
       canonicalPath = isIndex ? `${lang.prefix}/` : `${lang.prefix}/${translatedSlug}`;
     }
 
-    // Build hreflang alternatives
-    const availableLanguages = LANGUAGES.map(altLang => {
-      const altSlug = getSlugForLang(pageName, altLang.code);
-      return {
-        hreflang: altLang.hreflang,
-        url: `${SITE_URL}${altLang.code === DEFAULT_LANG
-          ? (isIndex ? '/' : `/${pageName}`)
-          : (isIndex ? `${altLang.prefix}/` : `${altLang.prefix}/${altSlug}`)}`,
-      };
-    });
+    // Build hreflang alternatives (only include languages where page actually exists)
+    const availableLanguages = LANGUAGES
+      .filter(altLang => {
+        const altFile = path.join(SRC, 'pages', altLang.code, `${pageName}.njk`);
+        return fs.existsSync(altFile);
+      })
+      .map(altLang => {
+        const altSlug = getSlugForLang(pageName, altLang.code);
+        return {
+          hreflang: altLang.hreflang,
+          url: `${SITE_URL}${altLang.code === DEFAULT_LANG
+            ? (isIndex ? '/' : `/${pageName}`)
+            : (isIndex ? `${altLang.prefix}/` : `${altLang.prefix}/${altSlug}`)}`,
+        };
+      });
 
     // Build language switcher URLs
     const languageSwitchUrls = LANGUAGES.map(altLang => {
@@ -232,7 +237,7 @@ for (const lang of LANGUAGES) {
       description: frontmatter.description || '',
       og_image: ogImage,
       og_locale: lang.ogLocale,
-      noindex: frontmatter.noindex || false,
+      noindex: frontmatter.noindex || usingFallback,
       og_type: frontmatter.og_type || 'website',
     };
 
@@ -274,8 +279,8 @@ for (const lang of LANGUAGES) {
       // Still generate the page with NL content but target language UI
     }
 
-    // Track for sitemap (skip 404 and noindex pages)
-    if (pageName !== '404' && !frontmatter.noindex) {
+    // Track for sitemap (skip 404, noindex, and fallback pages)
+    if (pageName !== '404' && !frontmatter.noindex && !usingFallback) {
       sitemapEntries.push({
         url: `${SITE_URL}${canonicalPath}`,
         lang: lang.code,
