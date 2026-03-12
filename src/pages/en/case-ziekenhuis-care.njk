@@ -151,9 +151,105 @@ og_type: "article"
         </section>
 
         <!-- ============================================ -->
+        <!-- IMPLEMENTATION & LESSONS                     -->
+        <!-- ============================================ -->
+        <section class="py-20 lg:py-28 bg-brand-light" aria-label="Implementation and lessons">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in-up">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-brand-blue bg-brand-blue/10 rounded-full uppercase mb-4">Implementation</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-navy-900 mb-4">From fragmentation to one orchestration layer</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">The transition from 25 separate systems to one integrated orchestration layer was carried out step by step, with minimal disruption to daily care.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+                    <!-- Implementation timeline -->
+                    <div class="fade-in-up">
+                        <div class="space-y-8">
+                            <div class="flex gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-sm">1</div>
+                                    <div class="w-0.5 h-full bg-brand-blue/20 mt-2"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-navy-900 mb-1">Month 1-2: System audit &amp; architecture</h3>
+                                    <p class="text-sm text-gray-600">All 25 systems inventoried for data format, API capabilities, and data flows. FHIR compatibility assessed per system. Integration plan drawn up with the hospital and all 8 care partners.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-sm">2</div>
+                                    <div class="w-0.5 h-full bg-brand-blue/20 mt-2"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-navy-900 mb-1">Month 3-5: FHIR integrations &amp; orchestration layer</h3>
+                                    <p class="text-sm text-gray-600">CareHub orchestration layer set up as middleware. First integrations with the hospital EHR and three home care organizations via FHIR/HL7 standards.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
+                                    <div class="w-0.5 h-full bg-brand-blue/20 mt-2"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-navy-900 mb-1">Month 6-8: Pilot &amp; validation</h3>
+                                    <p class="text-sm text-gray-600">Pilot with 200 patient records. Data exchange tested between hospital, rehabilitation center, and two home care partners. NEN 7510 compliance check completed.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-sm">4</div>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-navy-900 mb-1">Month 9-12: Full rollout</h3>
+                                    <p class="text-sm text-gray-600">All 9 organizations and 25 systems connected to the orchestration layer. Training for 120+ healthcare professionals. Unified patient overview live for the entire network.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lessons & quote -->
+                    <div class="fade-in-up" style="animation-delay: 0.15s">
+                        <div class="bg-navy-900 rounded-2xl p-8 mb-8">
+                            <svg class="w-10 h-10 text-brand-blue/40 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11H10v10H0z"/></svg>
+                            <p class="text-white text-lg leading-relaxed mb-4">&ldquo;The beauty of the orchestration layer is that we didn&rsquo;t have to replace a single system. Everyone works in their familiar environment, but data now flows seamlessly between all partners.&rdquo;</p>
+                            <p class="text-white/60 text-sm font-semibold">CMIO &mdash; Regional Hospital</p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-8 border border-gray-100">
+                            <h3 class="text-xl font-bold text-navy-900 mb-6">Three lessons for practice</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                                    <div>
+                                        <h4 class="font-semibold text-navy-900 mb-1">Start with the pain points</h4>
+                                        <p class="text-sm text-gray-600">The first integration solved the biggest bottleneck: duplicate medication registration. This immediately created buy-in from all partners for the next steps.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                                    <div>
+                                        <h4 class="font-semibold text-navy-900 mb-1">Open standards as foundation</h4>
+                                        <p class="text-sm text-gray-600">By choosing FHIR/HL7 as the integration standard, vendors did not need to build custom solutions. New partners can now connect in weeks instead of months.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                                    <div>
+                                        <h4 class="font-semibold text-navy-900 mb-1">Governance from the start</h4>
+                                        <p class="text-sm text-gray-600">A joint data governance committee with representatives from all 9 organizations ensured trust and fast decision-making on data sharing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
         <!-- RELATED CASES                                -->
         <!-- ============================================ -->
-        <section class="py-20 lg:py-28 bg-brand-light" aria-label="Related cases">
+        <section class="py-20 lg:py-28 bg-white" aria-label="Related cases">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12 fade-in-up">
                     <h2 class="text-3xl font-bold text-navy-900 mb-4">Explore our other cases</h2>

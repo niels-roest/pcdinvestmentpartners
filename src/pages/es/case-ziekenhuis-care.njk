@@ -151,9 +151,105 @@ og_type: "article"
         </section>
 
         <!-- ============================================ -->
+        <!-- IMPLEMENTACI&Oacute;N Y LECCIONES            -->
+        <!-- ============================================ -->
+        <section class="py-20 lg:py-28 bg-brand-light" aria-label="Implementaci&oacute;n y lecciones">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in-up">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-brand-blue bg-brand-blue/10 rounded-full uppercase mb-4">Implementaci&oacute;n</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-navy-900 mb-4">De fragmentaci&oacute;n a una capa de orquestaci&oacute;n</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">La transici&oacute;n de 25 sistemas separados a una capa de orquestaci&oacute;n integrada se llev&oacute; a cabo paso a paso, con una interrupci&oacute;n m&iacute;nima de la atenci&oacute;n diaria.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+                    <!-- Cronolog&iacute;a de implementaci&oacute;n -->
+                    <div class="fade-in-up">
+                        <div class="space-y-8">
+                            <div class="flex gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-sm">1</div>
+                                    <div class="w-0.5 h-full bg-brand-blue/20 mt-2"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-navy-900 mb-1">Mes 1-2: Auditor&iacute;a de sistemas &amp; arquitectura</h3>
+                                    <p class="text-sm text-gray-600">Los 25 sistemas inventariados por formato de datos, capacidades de API y flujos de datos. Compatibilidad FHIR evaluada por sistema. Plan de integraci&oacute;n elaborado con el hospital y los 8 socios asistenciales.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-sm">2</div>
+                                    <div class="w-0.5 h-full bg-brand-blue/20 mt-2"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-navy-900 mb-1">Mes 3-5: Integraciones FHIR &amp; capa de orquestaci&oacute;n</h3>
+                                    <p class="text-sm text-gray-600">La capa de orquestaci&oacute;n CareHub configurada como middleware. Primeras integraciones con el HCE del hospital y tres organizaciones de atenci&oacute;n domiciliaria mediante est&aacute;ndares FHIR/HL7.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
+                                    <div class="w-0.5 h-full bg-brand-blue/20 mt-2"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-navy-900 mb-1">Mes 6-8: Piloto &amp; validaci&oacute;n</h3>
+                                    <p class="text-sm text-gray-600">Piloto con 200 historiales de pacientes. Intercambio de datos probado entre hospital, centro de rehabilitaci&oacute;n y dos socios de atenci&oacute;n domiciliaria. Verificaci&oacute;n de cumplimiento NEN 7510 completada.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-sm">4</div>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-navy-900 mb-1">Mes 9-12: Despliegue completo</h3>
+                                    <p class="text-sm text-gray-600">Las 9 organizaciones y los 25 sistemas conectados a la capa de orquestaci&oacute;n. Formaci&oacute;n para m&aacute;s de 120 profesionales sanitarios. Visi&oacute;n unificada del paciente en funcionamiento para toda la red.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lecciones y cita -->
+                    <div class="fade-in-up" style="animation-delay: 0.15s">
+                        <div class="bg-navy-900 rounded-2xl p-8 mb-8">
+                            <svg class="w-10 h-10 text-brand-blue/40 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11H10v10H0z"/></svg>
+                            <p class="text-white text-lg leading-relaxed mb-4">&ldquo;Lo mejor de la capa de orquestaci&oacute;n es que no tuvimos que reemplazar ning&uacute;n sistema. Todos trabajan en su entorno habitual, pero los datos ahora fluyen de manera transparente entre todos los socios.&rdquo;</p>
+                            <p class="text-white/60 text-sm font-semibold">CMIO &mdash; Hospital Regional</p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-8 border border-gray-100">
+                            <h3 class="text-xl font-bold text-navy-900 mb-6">Tres lecciones para la pr&aacute;ctica</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                                    <div>
+                                        <h4 class="font-semibold text-navy-900 mb-1">Comience por los puntos de dolor</h4>
+                                        <p class="text-sm text-gray-600">La primera integraci&oacute;n resolvi&oacute; el mayor cuello de botella: el registro duplicado de medicaci&oacute;n. Esto gener&oacute; inmediatamente la aceptaci&oacute;n de todos los socios para los siguientes pasos.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                                    <div>
+                                        <h4 class="font-semibold text-navy-900 mb-1">Est&aacute;ndares abiertos como base</h4>
+                                        <p class="text-sm text-gray-600">Al elegir FHIR/HL7 como est&aacute;ndar de integraci&oacute;n, los proveedores no necesitaron desarrollar soluciones a medida. Nuevos socios pueden conectarse ahora en semanas en lugar de meses.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                                    <div>
+                                        <h4 class="font-semibold text-navy-900 mb-1">Gobernanza desde el inicio</h4>
+                                        <p class="text-sm text-gray-600">Un comit&eacute; conjunto de gobernanza de datos con representantes de las 9 organizaciones garantiz&oacute; confianza y una toma de decisiones r&aacute;pida sobre el intercambio de datos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
         <!-- RELATED CASES                                -->
         <!-- ============================================ -->
-        <section class="py-20 lg:py-28 bg-brand-light" aria-label="Casos relacionados">
+        <section class="py-20 lg:py-28 bg-white" aria-label="Casos relacionados">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12 fade-in-up">
                     <h2 class="text-3xl font-bold text-navy-900 mb-4">Consulte tambi&eacute;n nuestros otros casos</h2>

@@ -151,9 +151,105 @@ og_type: "article"
         </section>
 
         <!-- ============================================ -->
+        <!-- IMPLEMENTATIE & LESSEN                      -->
+        <!-- ============================================ -->
+        <section class="py-20 lg:py-28 bg-brand-light" aria-label="Implementatie en lessen">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in-up">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-brand-blue bg-brand-blue/10 rounded-full uppercase mb-4">Implementatie</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-navy-900 mb-4">Van fragmentatie naar &eacute;&eacute;n regielaag</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">De transitie van 25 losse systemen naar &eacute;&eacute;n ge&iuml;ntegreerde regielaag werd stapsgewijs uitgevoerd, met minimale verstoring van de dagelijkse zorg.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+                    <!-- Implementatietijdlijn -->
+                    <div class="fade-in-up">
+                        <div class="space-y-8">
+                            <div class="flex gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-sm">1</div>
+                                    <div class="w-0.5 h-full bg-brand-blue/20 mt-2"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-navy-900 mb-1">Maand 1-2: Systeemaudit &amp; architectuur</h3>
+                                    <p class="text-sm text-gray-600">Alle 25 systemen ge&iuml;nventariseerd op dataformaat, API-mogelijkheden en gegevensstromen. FHIR-compatibiliteit per systeem beoordeeld. Integratieplan opgesteld met het ziekenhuis en alle 8 care-partners.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-sm">2</div>
+                                    <div class="w-0.5 h-full bg-brand-blue/20 mt-2"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-navy-900 mb-1">Maand 3-5: FHIR-koppelingen &amp; regielaag</h3>
+                                    <p class="text-sm text-gray-600">CareHub-regielaag ingericht als middleware. Eerste koppelingen met het ziekenhuis-EPD en drie thuiszorgorganisaties via FHIR/HL7-standaarden.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
+                                    <div class="w-0.5 h-full bg-brand-blue/20 mt-2"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-navy-900 mb-1">Maand 6-8: Pilot &amp; validatie</h3>
+                                    <p class="text-sm text-gray-600">Pilot met 200 pati&euml;ntdossiers. Data-uitwisseling getest tussen ziekenhuis, revalidatiecentrum en twee thuiszorgpartners. NEN 7510-compliancecheck uitgevoerd.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-sm">4</div>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-navy-900 mb-1">Maand 9-12: Volledige uitrol</h3>
+                                    <p class="text-sm text-gray-600">Alle 9 organisaties en 25 systemen aangesloten op de regielaag. Training voor 120+ zorgprofessionals. Unified pati&euml;ntoverzicht live voor het gehele netwerk.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lessen & quote -->
+                    <div class="fade-in-up" style="animation-delay: 0.15s">
+                        <div class="bg-navy-900 rounded-2xl p-8 mb-8">
+                            <svg class="w-10 h-10 text-brand-blue/40 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11H10v10H0z"/></svg>
+                            <p class="text-white text-lg leading-relaxed mb-4">&ldquo;Het mooie van de regielaag is dat we geen enkel systeem hoefden te vervangen. Iedereen werkt in zijn vertrouwde omgeving, maar de data stroomt nu naadloos tussen alle partners.&rdquo;</p>
+                            <p class="text-white/60 text-sm font-semibold">CMIO &mdash; Regionaal Ziekenhuis</p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-8 border border-gray-100">
+                            <h3 class="text-xl font-bold text-navy-900 mb-6">Drie lessen voor de praktijk</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                                    <div>
+                                        <h4 class="font-semibold text-navy-900 mb-1">Begin met de pijnpunten</h4>
+                                        <p class="text-sm text-gray-600">De eerste koppeling loste het grootste knelpunt op: dubbele medicatieregistratie. Dit cre&euml;erde direct draagvlak bij alle partners voor de volgende stappen.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                                    <div>
+                                        <h4 class="font-semibold text-navy-900 mb-1">Open standaarden als basis</h4>
+                                        <p class="text-sm text-gray-600">Door FHIR/HL7 als integratiestandaard te kiezen hoefden leveranciers geen maatwerk te bouwen. Nieuwe partners kunnen nu in weken aansluiten in plaats van maanden.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 text-brand-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                                    <div>
+                                        <h4 class="font-semibold text-navy-900 mb-1">Governance vanaf het begin</h4>
+                                        <p class="text-sm text-gray-600">Een gezamenlijk datagovernance-comit&eacute; met vertegenwoordigers van alle 9 organisaties zorgde voor vertrouwen en snelle besluitvorming over datadeling.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
         <!-- RELATED CASES                                -->
         <!-- ============================================ -->
-        <section class="py-20 lg:py-28 bg-brand-light" aria-label="Gerelateerde cases">
+        <section class="py-20 lg:py-28 bg-white" aria-label="Gerelateerde cases">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12 fade-in-up">
                     <h2 class="text-3xl font-bold text-navy-900 mb-4">Bekijk ook onze andere cases</h2>
