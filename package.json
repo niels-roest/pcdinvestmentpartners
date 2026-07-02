@@ -8,7 +8,7 @@
     "dev": "node build.js && npx serve dist"
   },
   "dependencies": {
-    "fs-extra": "^11.3.5",
+    "fs-extra": "^11.3.6",
     "glob": "^10.3.10",
     "gray-matter": "^4.0.3",
     "nunjucks": "^3.2.4"
